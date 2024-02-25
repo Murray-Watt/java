@@ -3,17 +3,16 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.mwatt</groupId>
-  <artifactId>java</artifactId>
+  <artifactId>java-competency</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-
-  <name>j</name>
 
   <properties>
     <java.versions>21</java.versions>
     <encoding>UTF-8</encoding>
     <recompileMode>all</recompileMode>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>21</java.version>
     <log4j.version>3.0.0-beta1</log4j.version>
   </properties>
 
@@ -45,5 +44,23 @@
       <version>5.10.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>annotations</artifactId>
+      <version>23.1.0</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
