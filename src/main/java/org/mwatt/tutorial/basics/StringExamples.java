@@ -18,23 +18,23 @@ public class StringExamples extends ExampleBase {
             String s3 = new String("Hello");
             String s4 = new String("Hello");
 
-            exampleLine("System.out.println(\"s1 == s2: \" + (s1 == s2));");
-            System.out.println("s1 == s2: " + (s1 == s2));
+            exampleLine("System.out.println(s1 == s2);");
+            System.out.println(s1 == s2);
 
-            exampleLine("System.out.println(\"s1 == s3: \" + (s1 == s3));");
-            System.out.println("s1 == s3: " + (s1 == s3));
+            exampleLine("System.out.println(s1 == s3);");
+            System.out.println(s1 == s3);
 
-            exampleLine("System.out.println(\"s3 == s4: \" + (s3 == s4));");
-            System.out.println("s3 == s4: " + (s3 == s4));
+            exampleLine("System.out.println(s3 == s4);");
+            System.out.println(s3 == s4);
 
-            exampleLine("System.out.println(\"s1.equals(s2): \" + s1.equals(s2));");
-            System.out.println("s1.equals(s2): " + s1.equals(s2));
+            exampleLine("System.out.println(s1.equals(s2);");
+            System.out.println(s1.equals(s2));
 
-            exampleLine("System.out.println(\"s1.equals(s3): \" + s1.equals(s3));");
-            System.out.println("s1.equals(s3): " + s1.equals(s3));
+            exampleLine("System.out.println(s1.equals(s3));");
+            System.out.println(s1.equals(s3));
 
-            exampleLine("System.out.println(\"s3.equals(s4): \" + s3.equals(s4));");
-            System.out.println("s3.equals(s4): " + s3.equals(s4));
+            exampleLine("System.out.println(s3.equals(s4);");
+            System.out.println(s3.equals(s4));
         });
 
         runExample(() -> {
@@ -48,51 +48,51 @@ public class StringExamples extends ExampleBase {
             String s3 = "hello";
             String s4 = "HELLO";
 
-            exampleLine("System.out.println(\"s1.equalsIgnoreCase(s2): \" + s1.equalsIgnoreCase(s2));");
-            System.out.println("s1.equalsIgnoreCase(s2): " + s1.equalsIgnoreCase(s2));
+            exampleLine("s1.equalsIgnoreCase(s2));");
+            System.out.println(s1.equalsIgnoreCase(s2));
 
-            exampleLine("System.out.println(\"s1.equalsIgnoreCase(s3): \" + s1.equalsIgnoreCase(s3));");
-            System.out.println("s1.equalsIgnoreCase(s3): " + s1.equalsIgnoreCase(s3));
+            exampleLine("s1.equalsIgnoreCase(s3));");
+            System.out.println(s1.equalsIgnoreCase(s3));
 
-            exampleLine("System.out.println(\"s1.equalsIgnoreCase(s4): \" + s1.equalsIgnoreCase(s4));");
-            System.out.println("s1.equalsIgnoreCase(s4): " + s1.equalsIgnoreCase(s4));
+            exampleLine("s1.equalsIgnoreCase(s4));");
+            System.out.println(s1.equalsIgnoreCase(s4));
         });
     }
     public void stringCharAtAndCodePoints() {
         runExample(() -> {
             exampleLine("String s = \"Hello, World!\";");
-            exampleLine("System.out.println(\"s.charAt(0): \" + s.charAt(0));");
-            exampleLine("System.out.println(\"s.charAt(7): \" + s.charAt(7));");
-            exampleLine("System.out.println(\"s.charAt(12): \" + s.charAt(12));");
+            exampleLine("s.charAt(0));");
+            exampleLine("s.charAt(7));");
+            exampleLine(" s.charAt(12));");
 
             String s = "Hello, World!";
-            System.out.println("s.charAt(0): " + s.charAt(0));
-            System.out.println("s.charAt(7): " + s.charAt(7));
-            System.out.println("s.charAt(12): " + s.charAt(12));
+            System.out.println(s.charAt(0));
+            System.out.println(s.charAt(7));
+            System.out.println(s.charAt(12));
         });
 
         runExample(() -> {
             exampleLine("String s = \"Hello, World!\";");
-            exampleLine("System.out.println(\"s.codePointAt(0): \" + s.codePointAt(0));");
-            exampleLine("System.out.println(\"s.codePointAt(7): \" + s.codePointAt(7));");
-            exampleLine("System.out.println(\"s.codePointAt(12): \" + s.codePointAt(12));");
+            exampleLine("System.out.println(s.codePointAt(0));");
+            exampleLine("System.out.println(s.codePointAt(7));");
+            exampleLine("System.out.println(s.codePointAt(12));");
 
             String s = "Hello, World!";
-            System.out.println("s.codePointAt(0): " + s.codePointAt(0));
-            System.out.println("s.codePointAt(7): " + s.codePointAt(7));
-            System.out.println("s.codePointAt(12): " + s.codePointAt(12));
+            System.out.println(s.codePointAt(0));
+            System.out.println(s.codePointAt(7));
+            System.out.println(s.codePointAt(12));
         });
 
         runExample(() -> {
             exampleLine("String s = \"Hello, World!\";");
-            exampleLine("System.out.println(\"s.codePointBefore(1): \" + s.codePointBefore(1));");
-            exampleLine("System.out.println(\"s.codePointBefore(8): \" + s.codePointBefore(8));");
-            exampleLine("System.out.println(\"s.codePointBefore(13): \" + s.codePointBefore(13));");
+            exampleLine("System.out.println(s.codePointBefore(1));");
+            exampleLine("System.out.println(s.codePointBefore(8));");
+            exampleLine("System.out.println(s.codePointBefore(13));");
 
             String s = "Hello, World!";
-            System.out.println("s.codePointBefore(1): " + s.codePointBefore(1));
-            System.out.println("s.codePointBefore(8): " + s.codePointBefore(8));
-            System.out.println("s.codePointBefore(13): " + s.codePointBefore(13));
+            System.out.println(s.codePointBefore(1));
+            System.out.println(s.codePointBefore(8));
+            System.out.println(s.codePointBefore(13));
         });
 
         runExample(() -> {
@@ -102,9 +102,9 @@ public class StringExamples extends ExampleBase {
             exampleLine("System.out.println(\"s.codePointCount(0, 13): \" + s.codePointCount(0, 13));");
 
             String s = "Hello, World!";
-            System.out.println("s.codePointCount(0, 1): " + s.codePointCount(0, 1));
-            System.out.println("s.codePointCount(0, 8): " + s.codePointCount(0, 8));
-            System.out.println("s.codePointCount(0, 13): " + s.codePointCount(0, 13));
+            System.out.println(s.codePointCount(0, 1));
+            System.out.println(s.codePointCount(0, 8));
+            System.out.println(s.codePointCount(0, 13));
         });
     }
 
@@ -125,23 +125,23 @@ public class StringExamples extends ExampleBase {
             String s6 = "Hello, world!";
             String s7 = "Hello, WORLD!";
 
-            exampleLine("System.out.println(\"s1.compareTo(s2): \" + s1.compareTo(s2));");
-            System.out.println("s1.compareTo(s2): " + s1.compareTo(s2));
+            exampleLine("System.out.println(s1.compareTo(s2));");
+            System.out.println(s1.compareTo(s2));
 
-            exampleLine("System.out.println(\"s1.compareTo(s3): \" + s1.compareTo(s3));");
-            System.out.println("s1.compareTo(s3): " + s1.compareTo(s3));
+            exampleLine("System.out.println(s1.compareTo(s3));");
+            System.out.println(s1.compareTo(s3));
 
-            exampleLine("System.out.println(\"s1.compareTo(s4): \" + s1.compareTo(s4));");
-            System.out.println("s1.compareTo(s4): " + s1.compareTo(s4));
+            exampleLine("System.out.println(s1.compareTo(s4));");
+            System.out.println(s1.compareTo(s4));
 
-            exampleLine("System.out.println(\"s4.compareTo(s5): \" + s4.compareTo(s5));");
-            System.out.println("s4.compareTo(s5): " + s4.compareTo(s5));
+            exampleLine("s4.compareTo(s5));");
+            System.out.println( s4.compareTo(s5));
 
-            exampleLine("System.out.println(\"s5.compareTo(s6): \" + s5.compareTo(s6));");
-            System.out.println("s5.compareTo(s6): " + s5.compareTo(s6));
+            exampleLine("System.out.println(s5.compareTo(s6));");
+            System.out.println(s5.compareTo(s6));
 
-            exampleLine("System.out.println(\"s6.compareTo(s7): \" + s6.compareTo(s7));");
-            System.out.println("s6.compareTo(s7): " + s6.compareTo(s7));
+            exampleLine("System.out.println(s6.compareTo(s7));");
+            System.out.println(s6.compareTo(s7));
         });
 
         runExample(() -> {
@@ -277,15 +277,23 @@ public class StringExamples extends ExampleBase {
         });
 
         runExample(() -> {
-            exampleLine("String s = \"Hello, World!\";");
-            exampleLine("System.out.println(\"s.matches(\"Hello\"): \" + s.matches(\"Hello\"));");
-            exampleLine("System.out.println(\"s.matches(\"World\"): \" + s.matches(\"World\"));");
-            exampleLine("System.out.println(\"s.matches(\"!\")): \" + s.matches(\"!\");");
+            exampleLine("String s1 = \"Hello\";");
+            exampleLine("String s2 = \"Goodbye\";");
+            exampleLine("String s3 = \"World\";");
+            exampleLine("String regEx = \"Hello|Goodbye\";");
+            exampleLine("System.out.println(s1.matches(regEx));");
+            exampleLine("System.out.println(s2.matches(regEx));");
+            exampleLine("System.out.println(s3.matches(regEx));");
 
-            String s = "Hello, World!";
-            System.out.println("s.matches(\"Hello\"): " + s.matches("Hello"));
-            System.out.println("s.matches(\"World\"): " + s.matches("World"));
-            System.out.println("s.matches(\"!\"): " + s.matches("!"));
+            String s1 = "Hello";
+            String s2 = "Goodbye";
+            String s3 = "World";
+
+            String regEx = "Hello|Goodbye";
+
+            System.out.println(s1.matches(regEx));
+            System.out.println(s2.matches(regEx));
+            System.out.println(s3.matches(regEx));
         });
 
         runExample(() -> {
