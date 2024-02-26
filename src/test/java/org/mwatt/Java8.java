@@ -1,4 +1,4 @@
-package org.mwatt.tutorial.annotations;
+package org.mwatt;
 
 /*
     Class instance creation expression:

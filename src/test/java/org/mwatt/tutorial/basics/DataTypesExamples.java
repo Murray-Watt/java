@@ -1,6 +1,6 @@
 package org.mwatt.tutorial.basics;
 
-import org.mwatt.util.ExampleBase;
+import org.mwatt.util.ExampleTestBase;
 
 /*
     byte	1 byte	Stores whole numbers from -128 to 127
@@ -12,7 +12,7 @@ import org.mwatt.util.ExampleBase;
     boolean	1 bit	Stores true or false values
     char	2 bytes	Stores a single character/letter or ASCII values
  */
-public class DataTypesExamples extends ExampleBase {
+public class DataTypesExamples extends ExampleTestBase {
     public void dataTypeExamples() {
         runExample(() -> {
             printExample("byte b = 100;");

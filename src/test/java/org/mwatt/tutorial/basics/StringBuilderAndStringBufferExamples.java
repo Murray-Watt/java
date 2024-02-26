@@ -1,8 +1,8 @@
 package org.mwatt.tutorial.basics;
 
-import org.mwatt.util.ExampleBase;
+import org.mwatt.util.ExampleTestBase;
 
-public class StringBuilderAndStringBufferExamples extends ExampleBase {
+public class StringBuilderAndStringBufferExamples extends ExampleTestBase {
     public void stringBuffer() {
         runExample(() -> {
             printExample("""

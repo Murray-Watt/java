@@ -1,11 +1,11 @@
 package org.mwatt.tutorial.basics;
 
-import org.mwatt.util.ExampleBase;
+import org.mwatt.util.ExampleTestBase;
 
 /**
  * This class demonstrates how to use the System.out object to print text to the console.
  */
-public class ConsoleExamples extends ExampleBase {
+public class ConsoleExamples extends ExampleTestBase {
 
     public void printTextExample() {
         runExample(() -> {

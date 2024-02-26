@@ -1,11 +1,11 @@
 package org.mwatt.tutorial.basics;
 
-import org.mwatt.util.ExampleBase;
+import org.mwatt.util.ExampleTestBase;
 
 import java.util.Arrays;
 
 @SuppressWarnings("all")
-public class StringExamples extends ExampleBase {
+public class StringExamples extends ExampleTestBase {
     public void stringObjectEqualsAndValueEqualsExamples() {
         runExample(() -> {
             printExample("""

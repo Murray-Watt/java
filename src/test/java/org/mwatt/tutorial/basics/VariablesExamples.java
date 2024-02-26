@@ -1,6 +1,6 @@
 package org.mwatt.tutorial.basics;
 
-import org.mwatt.util.ExampleBase;
+import org.mwatt.util.ExampleTestBase;
 
 /*
     String - stores text, such as "Hello". String values are surrounded by double quotes
@@ -9,17 +9,7 @@ import org.mwatt.util.ExampleBase;
     char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
     boolean - stores values with two states: true or false
  */
-
-/*
-Widening Casting (automatically) - converting a smaller type to a larger type size
-byte -> short -> char -> int -> long -> float -> double
-
-Narrowing Casting (manually) - converting a larger type to a smaller size type
-double -> float -> long -> int -> char -> short -> byte
-
-Note: You will get an error if you try to convert a larger type to a smaller type:
- */
-public class VariablesExamples extends ExampleBase {
+public class VariablesExamples extends ExampleTestBase {
     public void variablesExamples() {
         runExample(() -> {
             printExample("""

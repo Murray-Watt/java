@@ -2,7 +2,7 @@ package org.mwatt.util;
 
 import org.mwatt.tutorial.basics.ConsoleExamples;
 
-public class ExampleBase {
+public class ExampleTestBase {
     protected static final Integer lineLength = 80;
     protected static final String HR = "*".repeat(lineLength);
 
@@ -42,7 +42,7 @@ public class ExampleBase {
         System.out.println();
 
         for (String line : lines) {
-            System.out.println(">" + line);
+            System.out.println("> " + line);
         }
 
         System.out.println();

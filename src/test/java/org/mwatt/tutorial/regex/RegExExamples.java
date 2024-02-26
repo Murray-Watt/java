@@ -1,10 +1,10 @@
-package org.mwatt.tutorial.basics;
+package org.mwatt.tutorial.regex;
 
-import org.mwatt.util.ExampleBase;
+import org.mwatt.util.ExampleTestBase;
 
 import java.util.regex.Pattern;
 
-public class RegExExamples extends ExampleBase {
+public class RegExExamples extends ExampleTestBase {
     public void regExBaseExample() {
         runExample(() -> {
             String text = "This is a test";
