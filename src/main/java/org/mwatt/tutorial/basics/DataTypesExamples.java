@@ -15,157 +15,157 @@ import org.mwatt.util.ExampleBase;
 public class DataTypesExamples extends ExampleBase {
     public void dataTypeExamples() {
         runExample(() -> {
-            exampleLine("byte b = 100;");
-            exampleLine("System.out.println(\"byte b = \" + b);");
+            printExample("byte b = 100;");
+            printExample("System.out.println(\"byte b = \" + b);");
             byte b = 100;
             System.out.println("byte b = " + b);
 
-            exampleLine("b = -100;");
-            exampleLine("System.out.println(\"byte b = \" + b);");
+            printExample("b = -100;");
+            printExample("System.out.println(\"byte b = \" + b);");
             b = -100;
             System.out.println("byte b = " + b);
 
-            exampleLine("b = 127;");
-            exampleLine("System.out.println(\"byte b = \" + b);");
+            printExample("b = 127;");
+            printExample("System.out.println(\"byte b = \" + b);");
             b = 127;
             System.out.println("byte b = " + b);
 
-            exampleLine("b = -128;");
-            exampleLine("System.out.println(\"byte b = \" + b);");
+            printExample("b = -128;");
+            printExample("System.out.println(\"byte b = \" + b);");
             b = -128;
             System.out.println("byte b = " + b);
         });
 
         runExample(() -> {
-            exampleLine("short s = 10000;");
-            exampleLine("System.out.println(\"short s = \" + s);");
+            printExample("short s = 10000;");
+            printExample("System.out.println(\"short s = \" + s);");
             short s = 10000;
             System.out.println("short s = " + s);
 
-            exampleLine("s = -10000;");
-            exampleLine("System.out.println(\"short s = \" + s);");
+            printExample("s = -10000;");
+            printExample("System.out.println(\"short s = \" + s);");
             s = -10000;
             System.out.println("short s = " + s);
 
-            exampleLine("s = 32767;");
-            exampleLine("System.out.println(\"short s = \" + s);");
+            printExample("s = 32767;");
+            printExample("System.out.println(\"short s = \" + s);");
             s = 32767;
             System.out.println("short s = " + s);
 
-            exampleLine("s = -32768;");
-            exampleLine("System.out.println(\"short s = \" + s);");
+            printExample("s = -32768;");
+            printExample("System.out.println(\"short s = \" + s);");
             s = -32768;
             System.out.println("short s = " + s);
         });
 
         runExample(() -> {
-            exampleLine("int i = 100000;");
-            exampleLine("System.out.println(\"int i = \" + i);");
+            printExample("int i = 100000;");
+            printExample("System.out.println(\"int i = \" + i);");
             int i = 100000;
             System.out.println("int i = " + i);
 
-            exampleLine("i = -100000;");
-            exampleLine("System.out.println(\"int i = \" + i);");
+            printExample("i = -100000;");
+            printExample("System.out.println(\"int i = \" + i);");
             i = -100000;
             System.out.println("int i = " + i);
 
-            exampleLine("i = 2147483647;");
-            exampleLine("System.out.println(\"int i = \" + i);");
+            printExample("i = 2147483647;");
+            printExample("System.out.println(\"int i = \" + i);");
             i = 2147483647;
             System.out.println("int i = " + i);
 
-            exampleLine("i = -2147483648;");
-            exampleLine("System.out.println(\"int i = \" + i);");
+            printExample("i = -2147483648;");
+            printExample("System.out.println(\"int i = \" + i);");
             i = -2147483648;
             System.out.println("int i = " + i);
         });
 
         runExample(() -> {
-            exampleLine("long l = 10000000000L;");
-            exampleLine("System.out.println(\"long l = \" + l);");
+            printExample("long l = 10000000000L;");
+            printExample("System.out.println(\"long l = \" + l);");
             long l = 10000000000L;
             System.out.println("long l = " + l);
 
-            exampleLine("l = -10000000000L;");
-            exampleLine("System.out.println(\"long l = \" + l);");
+            printExample("l = -10000000000L;");
+            printExample("System.out.println(\"long l = \" + l);");
             l = -10000000000L;
             System.out.println("long l = " + l);
 
-            exampleLine("l = 9223372036854775807L;");
-            exampleLine("System.out.println(\"long l = \" + l);");
+            printExample("l = 9223372036854775807L;");
+            printExample("System.out.println(\"long l = \" + l);");
             l = 9223372036854775807L;
             System.out.println("long l = " + l);
 
-            exampleLine("l = -9223372036854775808L;");
-            exampleLine("System.out.println(\"long l = \" + l);");
+            printExample("l = -9223372036854775808L;");
+            printExample("System.out.println(\"long l = \" + l);");
             l = -9223372036854775808L;
             System.out.println("long l = " + l);
         });
 
         runExample(() -> {
-            exampleLine("float f = 123.456f;");
-            exampleLine("System.out.println(\"float f = \" + f);");
+            printExample("float f = 123.456f;");
+            printExample("System.out.println(\"float f = \" + f);");
             float f = 123.456f;
             System.out.println("float f = " + f);
 
-            exampleLine("f = -123.456f;");
-            exampleLine("System.out.println(\"float f = \" + f);");
+            printExample("f = -123.456f;");
+            printExample("System.out.println(\"float f = \" + f);");
             f = -123.456f;
             System.out.println("float f = " + f);
 
-            exampleLine("f = 3.4028235E38f;");
-            exampleLine("System.out.println(\"float f = \" + f);");
+            printExample("f = 3.4028235E38f;");
+            printExample("System.out.println(\"float f = \" + f);");
             f = 3.4028235E38f;
             System.out.println("float f = " + f);
 
-            exampleLine("f = -3.4028235E38f;");
-            exampleLine("System.out.println(\"float f = \" + f);");
+            printExample("f = -3.4028235E38f;");
+            printExample("System.out.println(\"float f = \" + f);");
             f = -3.4028235E38f;
             System.out.println("float f = " + f);
         });
 
         runExample(() -> {
-            exampleLine("double d = 123.456;");
-            exampleLine("System.out.println(\"double d = \" + d);");
+            printExample("double d = 123.456;");
+            printExample("System.out.println(\"double d = \" + d);");
             double d = 123.456;
             System.out.println("double d = " + d);
 
-            exampleLine("d = -123.456;");
-            exampleLine("System.out.println(\"double d = \" + d);");
+            printExample("d = -123.456;");
+            printExample("System.out.println(\"double d = \" + d);");
             d = -123.456;
             System.out.println("double d = " + d);
 
-            exampleLine("d = 1.7976931348623157E308;");
-            exampleLine("System.out.println(\"double d = \" + d);");
+            printExample("d = 1.7976931348623157E308;");
+            printExample("System.out.println(\"double d = \" + d);");
             d = 1.7976931348623157E308;
             System.out.println("double d = " + d);
 
-            exampleLine("d = -1.7976931348623157E308;");
-            exampleLine("System.out.println(\"double d = \" + d);");
+            printExample("d = -1.7976931348623157E308;");
+            printExample("System.out.println(\"double d = \" + d);");
             d = -1.7976931348623157E308;
             System.out.println("double d = " + d);
         });
 
         runExample(() -> {
-            exampleLine("boolean b = true;");
-            exampleLine("System.out.println(\"boolean b = \" + b);");
+            printExample("boolean b = true;");
+            printExample("System.out.println(\"boolean b = \" + b);");
             boolean b = true;
             System.out.println("boolean b = " + b);
 
-            exampleLine("b = false;");
-            exampleLine("System.out.println(\"boolean b = \" + b);");
+            printExample("b = false;");
+            printExample("System.out.println(\"boolean b = \" + b);");
             b = false;
             System.out.println("boolean b = " + b);
         });
 
         runExample(() -> {
-            exampleLine("char c = 'A';");
-            exampleLine("System.out.println(\"char c = \" + c);");
+            printExample("char c = 'A';");
+            printExample("System.out.println(\"char c = \" + c);");
             char c = 'A';
             System.out.println("char c = " + c);
 
-            exampleLine("c = 65;");
-            exampleLine("System.out.println(\"char c = \" + c);");
+            printExample("c = 65;");
+            printExample("System.out.println(\"char c = \" + c);");
             c = 65;
             System.out.println("char c = " + c);
         });

@@ -8,29 +8,37 @@ import org.mwatt.util.ExampleBase;
 public class CommentsExamples extends ExampleBase {
     public void commentsExamples() {
         runExample(() -> {
-            exampleLine("// This is a single line comment");
+            printExample("// This is a single line comment");
         });
 
         runExample(() -> {
-            exampleLine("/* This is a multi-line comment");
-            exampleLine("   that spans multiple lines */");
+            printExample("""
+                    /* This is a multi-line comment
+                       that spans multiple lines */
+                    """);
         });
 
         runExample(() -> {
-            exampleLine("/** This is a Javadoc comment");
-            exampleLine("    that can be used to document");
-            exampleLine("    classes, methods, and fields */");
+            printExample("""
+                    /**
+                      This is a Javadoc comment
+                      that can be used to document
+                      classes, methods, and fields
+                     */
+                    """);
         });
 
         runExample(() -> {
-            exampleLine("/**");
-            exampleLine(" * This is a Javadoc comment");
-            exampleLine(" * that can be used to document");
-            exampleLine(" * classes, methods, and fields");
-            exampleLine(" *");
-            exampleLine(" * @param <K> the type of keys maintained by this cache");
-            exampleLine(" * @param <V> the type of mapped values");
-            exampleLine(" */");
+            printExample("""
+                    /**
+                     * This is a Javadoc comment
+                     * that can be used to document
+                     * classes, methods, and fields
+                     *
+                     * @param <K> the type of keys maintained by this cache
+                     * @param <V> the type of mapped values
+                     */
+                    """);
         });
     }
 

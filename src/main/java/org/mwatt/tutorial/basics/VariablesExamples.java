@@ -22,36 +22,51 @@ Note: You will get an error if you try to convert a larger type to a smaller typ
 public class VariablesExamples extends ExampleBase {
     public void variablesExamples() {
         runExample(() -> {
-            exampleLine("String name = \"John\";");
-            exampleLine("System.out.println(name);");
+            printExample("""
+                    String name = "John";
+                    System.out.println(name);
+                    """);
+
             String name = "John";
             System.out.println(name);
         });
 
         runExample(() -> {
-            exampleLine("int myNum = 15;");
-            exampleLine("System.out.println(myNum);");
+            printExample("""
+                    int myNum = 15;
+                    System.out.println(myNum);
+                    """);
+
             int myNum = 15;
             System.out.println(myNum);
         });
 
         runExample(() -> {
-            exampleLine("float myFloatNum = 5.99f;");
-            exampleLine("System.out.println(myFloatNum);");
+            printExample("""
+                    float myFloatNum = 5.99f;
+                    System.out.println(myFloatNum);
+                    """);
+
             float myFloatNum = 5.99f;
             System.out.println(myFloatNum);
         });
 
         runExample(() -> {
-            exampleLine("char myLetter = 'D';");
-            exampleLine("System.out.println(myLetter);");
+            printExample("""
+                    char myLetter = 'D';
+                    System.out.println(myLetter);
+                    """);
+
             char myLetter = 'D';
             System.out.println(myLetter);
         });
 
         runExample(() -> {
-            exampleLine("boolean myBool = true;");
-            exampleLine("System.out.println(myBool);");
+            printExample("""
+                    boolean myBool = true;
+                    System.out.println(myBool);
+                    """);
+
             boolean myBool = true;
             System.out.println(myBool);
         });

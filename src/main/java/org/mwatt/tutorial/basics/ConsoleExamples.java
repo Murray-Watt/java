@@ -9,58 +9,76 @@ public class ConsoleExamples extends ExampleBase {
 
     public void printTextExample() {
         runExample(() -> {
-            exampleLine("System.out.println(\"Hello, World!\");");
+            printExample("""
+                         System.out.println("Hello, World!");
+                         """);
             System.out.println("Hello, World!");
         });
 
         runExample(() -> {
-            exampleLine("System.out.println(\"Hello, \");");
-            exampleLine("System.out.println(World!);");
+            printExample("""
+                         System.out.print("Hello, ");
+                         System.out.println("World!");
+                         """);
             System.out.print("Hello, ");
             System.out.println("World!");
 
-            System.out.println("System.out.printf(\"%s\", \"Hello, World!\");");
+            printExample("""
+                         System.out.printf("%s", "Hello, World!");
+                         """);
             System.out.printf("%s", "Hello, World!");
         });
     }
 
     public void printNumberExample() {
         runExample(() -> {
-            exampleLine("System.out.println(123);");
-            exampleLine("System.out.println(4);");
+            printExample("""
+                         System.out.println(123);
+                         System.out.println(4);
+                         """);
 
             System.out.println(123);
             System.out.println(4);
         });
 
         runExample(() -> {
-            exampleLine("System.out.print(123);");
-            exampleLine("System.out.println(4);");
+            printExample("""
+                         System.out.printf("%d", 123);
+                         System.out.printf("%d", 4);
+                         """);
 
             System.out.print(123);
             System.out.println(4);
         });
 
         runExample(() -> {
-            exampleLine("System.out.print(\"%d\", 123);");
-            exampleLine("System.out.println(\"%d%s\", 4);");
-            System.out.printf("%d", 123);
+            printExample("""
+                         System.out.printf("%d", 123);
+                         System.out.printf("%d", 4);
+                         """);
 
+            System.out.printf("%d", 123);
             System.out.printf("%d", 4);
         });
     }
     
     public void printCharacterExample() {
         runExample(() -> {
-            exampleLine("System.out.println('a');");
-            exampleLine("System.out.println('b');");
+            printExample("""
+                         System.out.println('a');
+                         System.out.println('b');
+                         """);
+
             System.out.println('a');
             System.out.println('b');
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%c\", 'a');");
-            exampleLine("System.out.printf(\"%c\", 'b');");
+            printExample("""
+                         System.out.printf("%c", 'a');
+                         System.out.printf("%c", 'b');
+                         """);
+
             System.out.printf("%c", 'a');
             System.out.printf("%c", 'b');
         });
@@ -68,15 +86,21 @@ public class ConsoleExamples extends ExampleBase {
     
     public void printBooleanExample() {
         runExample(() -> {
-            exampleLine("System.out.println(true);");
-            exampleLine("System.out.println(false);");
+            printExample("""
+                         System.out.println(true);
+                         System.out.println(false);
+                         """);
+
             System.out.println(true);
             System.out.println(false);
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%b\", true);");
-            exampleLine("System.out.printf(\"%b\", false);");
+            printExample("""
+                         System.out.printf("%b", true);
+                         System.out.printf("%b", false);
+                         """);
+
             System.out.printf("%b", true);
             System.out.printf("%b", false);
         });
@@ -84,15 +108,21 @@ public class ConsoleExamples extends ExampleBase {
     
     public void printFloatExample() {
         runExample(() -> {
-            exampleLine("System.out.println(1.23f);");
-            exampleLine("System.out.println(4.56f);");
+            printExample("""
+                         System.out.println(1.23f);
+                         System.out.println(4.56f);
+                         """);
+
             System.out.println(1.23f);
             System.out.println(4.56f);
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%f\", 1.23f);");
-            exampleLine("System.out.printf(\"%f\", 4.56f);");
+            printExample("""
+                         System.out.printf("%f", 1.23f);
+                         System.out.printf("%f", 4.56f);
+                         """);
+
             System.out.printf("%f", 1.23f);
             System.out.printf("%f", 4.56f);
         });
@@ -100,15 +130,21 @@ public class ConsoleExamples extends ExampleBase {
     
     public void printDoubleExample() {
         runExample(() -> {
-            exampleLine("System.out.println(1.23);");
-            exampleLine("System.out.println(4.56);");
+            printExample("""
+                         System.out.println(1.23);
+                         System.out.println(4.56);
+                         """);
+
             System.out.println(1.23);
             System.out.println(4.56);
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%f\", 1.23);");
-            exampleLine("System.out.printf(\"%f\", 4.56);");
+            printExample("""
+                         System.out.printf("%f", 1.23);
+                         System.out.printf("%f", 4.56);
+                         """);
+
             System.out.printf("%f", 1.23);
             System.out.printf("%f", 4.56);
         });
@@ -116,15 +152,21 @@ public class ConsoleExamples extends ExampleBase {
     
     public void printLongExample() {
         runExample(() -> {
-            exampleLine("System.out.println(123L);");
-            exampleLine("System.out.println(456L);");
+            printExample("""
+                         System.out.println(123L);
+                         System.out.println(456L);
+                         """);
+
             System.out.println(123L);
             System.out.println(456L);
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%d\", 123L);");
-            exampleLine("System.out.printf(\"%d\", 456L);");
+            printExample("""
+                         System.out.printf("%d", 123L);
+                         System.out.printf("%d", 456L);
+                         """);
+
             System.out.printf("%d", 123L);
             System.out.printf("%d", 456L);
         });
@@ -132,15 +174,21 @@ public class ConsoleExamples extends ExampleBase {
     
     public void printByteExample() {
         runExample(() -> {
-            exampleLine("System.out.println((byte) 123);");
-            exampleLine("System.out.println((byte) 4);");
+            printExample("""
+                         System.out.println((byte) 123);
+                         System.out.println((byte) 4);
+                         """);
+
             System.out.println((byte) 123);
             System.out.println((byte) 4);
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%d\", (byte) 123);");
-            exampleLine("System.out.printf(\"%d\", (byte) 4);");
+            printExample("""
+                         System.out.printf("%d", (byte) 123);
+                         System.out.printf("%d", (byte) 4);
+                         """);
+
             System.out.printf("%d", (byte) 123);
             System.out.printf("%d", (byte) 4);
         });
@@ -148,15 +196,21 @@ public class ConsoleExamples extends ExampleBase {
     
     public void printShortExample() {
         runExample(() -> {
-            exampleLine("System.out.println((short) 123);");
-            exampleLine("System.out.println((short) 4);");
+            printExample("""
+                         System.out.println((short) 123);
+                         System.out.println((short) 4);
+                         """);
+
             System.out.println((short) 123);
             System.out.println((short) 4);
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%d\", (short) 123);");
-            exampleLine("System.out.printf(\"%d\", (short) 4);");
+            printExample("""
+                        System.out.printf("%d", (short) 123);
+                        System.out.printf("%d", (short) 4);
+                        """);
+
             System.out.printf("%d", (short) 123);
             System.out.printf("%d", (short) 4);
         });
@@ -164,15 +218,21 @@ public class ConsoleExamples extends ExampleBase {
     
     public void printSpecialCharacterExample() {
         runExample(() -> {
-            exampleLine("System.out.println(\"\\n\");");
-            exampleLine("System.out.println(\"\\t\");");
+            printExample("""
+                         System.out.println("\\n");
+                         System.out.println("\\t");
+                         """);
+
             System.out.println("\n");
             System.out.println("\t");
         });
         
         runExample(() -> {
-            exampleLine("System.out.printf(\"%s\", \"\\n\");");
-            exampleLine("System.out.printf(\"%s\", \"\\t\");");
+            printExample("""
+                         System.out.printf("%s", "\\n");
+                         System.out.printf("%s", "\\t");
+                         """);
+
             System.out.printf("%s", "\n");
             System.out.printf("%s", "\t");
         });
@@ -184,6 +244,7 @@ public class ConsoleExamples extends ExampleBase {
         console.runExamples("Text Examples", console::printTextExample);
         console.runExamples("Number Examples", console::printNumberExample);
         console.runExamples("Character Examples", console::printCharacterExample);
+        console.runExamples("Special Character Examples", console::printSpecialCharacterExample);
         console.runExamples("Boolean Examples", console::printBooleanExample);
         console.runExamples("Float Examples", console::printFloatExample);
         console.runExamples("Double Examples", console::printDoubleExample);

@@ -36,8 +36,16 @@ public class ExampleBase {
         }
     }
 
-    public void exampleLine(String line) {
-        System.out.println('>' + line);
+    public void printExample(String example) {
+        String[] lines = example.split("\\R");
+
+        System.out.println();
+
+        for (String line : lines) {
+            System.out.println(">" + line);
+        }
+
+        System.out.println();
     }
 
     public void runExamples(String title, Example examples) {
