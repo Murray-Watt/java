@@ -1,6 +1,6 @@
 package org.mwatt.util;
 
-import org.mwatt.tutorial.basics.ConsoleExamples;
+import org.mwatt.tutorial.basics.ConsoleTest;
 
 public class ExampleTestBase {
     protected static final Integer lineLength = 80;
@@ -20,37 +20,11 @@ public class ExampleTestBase {
     public void runExample(Example example) {
         System.out.println();
         example.run();
-        nextExample();
-    }
-
-    private void nextExample() {
-        System.out.println();
-        System.out.print("Press Enter to continue...");
-        try {
-            int key = System.in.read();
-
-            while (key != 10 && key != 13) {
-                key = System.in.read();
-            }
-        } catch (Exception ignored) {
-        }
-    }
-
-    public void printExample(String example) {
-        String[] lines = example.split("\\R");
-
-        System.out.println();
-
-        for (String line : lines) {
-            System.out.println("> " + line);
-        }
-
-        System.out.println();
     }
 
     public void runExamples(String title, Example examples) {
-        ConsoleExamples.printHeader(title);
+        ConsoleTest.printHeader(title);
         examples.run();
-        ConsoleExamples.printFooter();
+        ConsoleTest.printFooter();
     }
 }
