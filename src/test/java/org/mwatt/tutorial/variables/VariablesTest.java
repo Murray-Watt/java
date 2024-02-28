@@ -1,5 +1,6 @@
 package org.mwatt.tutorial.variables;
 
+import org.junit.jupiter.api.Test;
 import org.mwatt.util.ExampleTestBase;
 
 /*
@@ -10,6 +11,8 @@ import org.mwatt.util.ExampleTestBase;
     boolean     stores values with two states: true or false
  */
 public class VariablesTest extends ExampleTestBase {
+
+    @Test
     public void variablesExamples() {
         {
             String name = "John";
@@ -34,7 +37,7 @@ public class VariablesTest extends ExampleTestBase {
         {
             boolean myBool = true;
             System.out.println(myBool);
-        };
+        }
     }
 
     public static void main(String[] args) {

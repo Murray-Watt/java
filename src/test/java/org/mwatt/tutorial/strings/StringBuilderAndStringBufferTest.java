@@ -1,4 +1,4 @@
-package org.mwatt.tutorial.basics;
+package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
 import org.mwatt.util.ExampleTestBase;
