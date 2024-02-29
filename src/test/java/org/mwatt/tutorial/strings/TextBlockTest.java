@@ -1,4 +1,4 @@
-package org.mwatt.tutorial.basics;
+package org.mwatt.tutorial.strings;
 
 import org.mwatt.util.ExampleTestBase;
 

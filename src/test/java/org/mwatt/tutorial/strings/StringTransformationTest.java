@@ -22,6 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
     trim
     valueOf
 */
+@SuppressWarnings("UnnecessaryCallToStringValueOf")
 public class StringTransformationTest extends ExampleTestBase {
 
     // chars Java 9
@@ -143,4 +144,6 @@ public class StringTransformationTest extends ExampleTestBase {
         examples.runExamples("String trim", examples::trimExamples);
         examples.runExamples("String valueOf", examples::valueOfExamples);
     }
+
+
 }
