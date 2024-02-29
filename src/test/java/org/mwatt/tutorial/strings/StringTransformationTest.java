@@ -1,7 +1,6 @@
 package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import static java.util.stream.Collectors.joining;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
     valueOf
 */
 @SuppressWarnings("UnnecessaryCallToStringValueOf")
-public class StringTransformationTest extends ExampleTestBase {
+public class StringTransformationTest {
 
     // chars Java 9
     @Test
@@ -128,22 +127,4 @@ public class StringTransformationTest extends ExampleTestBase {
         System.out.println("String.valueOf(123): " + String.valueOf(123));
         assertEquals("123", String.valueOf(123));
     }
-
-    public static void main(String[] args) {
-        StringTransformationTest examples = new StringTransformationTest();
-
-        examples.runExamples("String chars", examples::charsExamples);
-        examples.runExamples("String codePoints", examples::codePointsExamples);
-        examples.runExamples("String format", examples::basicFormatExample);
-        examples.runExamples("String lines", examples::linesExamples);
-        examples.runExamples("String repeat", examples::repeatExamples);
-        examples.runExamples("String strip", examples::stripExamples);
-        examples.runExamples("String toCharArray", examples::toCharArrayExamples);
-        examples.runExamples("String toLowerCase", examples::toLowerCaseExamples);
-        examples.runExamples("String toUpperCase", examples::toUpperCaseExamples);
-        examples.runExamples("String trim", examples::trimExamples);
-        examples.runExamples("String valueOf", examples::valueOfExamples);
-    }
-
-
 }

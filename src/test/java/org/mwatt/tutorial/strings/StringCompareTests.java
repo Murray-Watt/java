@@ -1,10 +1,7 @@
 package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
-import java.util.Arrays;
 
-import static java.util.stream.Collectors.joining;
 import static org.junit.jupiter.api.Assertions.*;
 
 /*
@@ -16,7 +13,8 @@ import static org.junit.jupiter.api.Assertions.*;
         isEmpty
         isBlank
  */
-public class StringCompareTests extends ExampleTestBase {
+@SuppressWarnings({"StringOperationCanBeSimplified", "StringEquality", "ConstantValue", "NewObjectEquality", "StringBufferMayBeStringBuilder", "unused"})
+public class StringCompareTests {
     @Test
     public void objectEqualsExamples() {
         String s1 = "Hello";
@@ -106,7 +104,7 @@ public class StringCompareTests extends ExampleTestBase {
             System.out.println("s4.compareToIgnoreCase(s5): " + s4.compareToIgnoreCase(s5));
             System.out.println("s5.compareToIgnoreCase(s6): " + s5.compareToIgnoreCase(s6));
             System.out.println("s6.compareToIgnoreCase(s7): " + s6.compareToIgnoreCase(s7));
-        };
+        }
     }
 
     @Test
@@ -184,27 +182,5 @@ public class StringCompareTests extends ExampleTestBase {
         System.out.println("s5: \"" + s5 + "\"");
         System.out.println("s5.isBlank(): " + s5.isBlank());
         assertFalse(s5.isBlank());
-    }
-
-    public static void main(String[] args) {
-        
-        /*
-            equals
-            equalsIgnoreCase
-            contentEquals
-            compareTo
-            compareToIgnoreCase
-            isEmpty
-            isBlank
-         */
-        StringCompareTests examples = new StringCompareTests();
-
-        examples.runExamples("String ==", examples::objectEqualsExamples);
-        examples.runExamples("String equals", examples::valueEqualsExamples);
-        examples.runExamples("String equalsIgnoreCase", examples::equalIgnoreCaseExamples);
-        examples.runExamples("isEmpty", examples::isEmptyExamples);
-        examples.runExamples("isBlank", examples::isBlankExamples);
-        examples.runExamples("String contentEquals", examples::contentEqualsExamples);
-        examples.runExamples("String compareTo", examples::compareToExamples);
     }
 }

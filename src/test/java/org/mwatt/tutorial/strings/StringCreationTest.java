@@ -1,14 +1,15 @@
 package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import java.nio.charset.StandardCharsets;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class StringCreationTest extends ExampleTestBase {
+@SuppressWarnings({"AccessStaticViaInstance", "ImplicitArrayToString", "StringOperationCanBeSimplified", "StringEquality", "SimplifiableAssertion"})
+public class StringCreationTest {
 
+    @SuppressWarnings("StringBufferMayBeStringBuilder")
     @Test
     public void createExamples() {
         String string1 = "Hello";
@@ -103,16 +104,5 @@ public class StringCreationTest extends ExampleTestBase {
         System.out.println("string1 == string3: " + (string1 == string3));
         assertFalse(string1 == string2);
         assertTrue(string1 == string3);
-    }
-
-    public static void main(String[] args) {
-        StringCreationTest examples = new StringCreationTest();
-
-        examples.runExamples("Create String", examples::createExamples);
-        examples.runExamples("String charAt", examples::charAtExamples);
-        examples.runExamples("String format", examples::basicFormatExample);
-        examples.runExamples("String getBytes", examples::getBytesExamples);
-        examples.runExamples("String getChars", examples::getCharsExamples);
-        examples.runExamples("String intern", examples::internExamples);
     }
 }

@@ -1,11 +1,10 @@
 package org.mwatt.tutorial.basics;
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SuppressWarnings("all")
-public class CastingTest extends ExampleTestBase {
+public class CastingTest {
     /*
         Widening Casting (automatically) - converting a smaller type to a larger type size
         byte -> short -> int -> long -> float -> double
@@ -83,12 +82,5 @@ public class CastingTest extends ExampleTestBase {
 
         System.out.println("byte: " + myByte);
         assertEquals(65,myByte);
-    }
-
-    public static void main(String[] args) {
-        CastingTest examples = new CastingTest();
-
-        examples.runExamples("Widening Casting", examples::wideningCasting);
-        examples.runExamples("Narrowing Casting", examples::narrowingCasting);
     }
 }

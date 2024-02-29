@@ -1,7 +1,6 @@
 package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -15,7 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
     regionMatches
     startsWith
  */
-public class StringSearchTest extends ExampleTestBase {
+@SuppressWarnings("ConstantValue")
+public class StringSearchTest {
 
     @Test
     public void compareToExamples() {
@@ -95,6 +95,7 @@ public class StringSearchTest extends ExampleTestBase {
         System.out.println("s.startsWith(\"!\"): " + s.startsWith("!"));
     }
 
+    @Test
     public void endWithExample() {
         String s = "Hello, World!";
         System.out.println("s.endsWith(\"Hello\"): " + s.endsWith("Hello"));
@@ -144,17 +145,5 @@ public class StringSearchTest extends ExampleTestBase {
         assertFalse(s1.regionMatches(false,14, s2, 0, 5));
         System.out.println("s1.regionMatches(7, s3, 0, 5): " + s1.regionMatches(false,15, s2, 1, 4));
         assertTrue(s1.regionMatches(false,15, s2, 1, 4));
-    }
-
-    public static void main(String[] args) {
-        StringSearchTest examples = new StringSearchTest();
-        examples.runExamples("String contains", examples::containsExamples);
-        examples.runExamples("String startsWith and endsWith", examples::endWithExample);
-        examples.runExamples("String indexOf", examples::indexOfExamples);
-        examples.runExamples("String lastIndexOf", examples::lastIndexOfExample);
-        examples.runExamples("String startsWith and endsWith", examples::startsWithExample);
-        examples.runExamples("String compareTo", examples::compareToExamples);
-        examples.runExamples("String matches", examples::matchesExamples);
-        examples.runExamples("String regionMatches", examples::regionMatchesExamples);
     }
 }

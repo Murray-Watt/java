@@ -1,13 +1,11 @@
 package org.mwatt.tutorial.basics;
 
-import org.mwatt.util.ExampleTestBase;
-
- /**
+/**
      This is a Javadoc comment
      that can be used to document
      classes, methods, and fields
  */
-public class CommentsTest extends ExampleTestBase {
+public class CommentsTest {
     public void commentsExamples() {
         // This is a single line comment")
 
@@ -23,9 +21,6 @@ public class CommentsTest extends ExampleTestBase {
       *
       * @param args the command-line arguments
       */
-    public static void main(String[] args) {
-        CommentsTest example = new CommentsTest();
-        example.runExamples("Comments Examples", example::commentsExamples);
+    public void aMethod(String[] args) {
     }
-
 }

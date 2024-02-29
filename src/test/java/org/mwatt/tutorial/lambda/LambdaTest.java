@@ -1,10 +1,9 @@
 package org.mwatt.tutorial.lambda;
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import java.util.function.*;
 
-public class LambdaTest extends ExampleTestBase {
+public class LambdaTest {
 
     @Test
     public void lambdaExpressionNoParamAndExpression() {

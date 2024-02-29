@@ -1,12 +1,11 @@
 package org.mwatt.tutorial.basics;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 /**
  * This class demonstrates how to use the System.out object to print text to the console.
  */
-public class ConsoleTest extends ExampleTestBase {
+public class ConsoleTest {
 
     @Test
     public void printTextExample() {
@@ -99,21 +98,5 @@ public class ConsoleTest extends ExampleTestBase {
         System.out.printf("%s", "\n");
         System.out.printf("%s", "\t");
     }
-
-    public static void main(String[] args) {
-        ConsoleTest console = new ConsoleTest();
-
-        console.runExamples("Text Examples", console::printTextExample);
-        console.runExamples("Number Examples", console::printNumberExample);
-        console.runExamples("Character Examples", console::printCharacterExample);
-        console.runExamples("Special Character Examples", console::printSpecialCharacterExample);
-        console.runExamples("Boolean Examples", console::printBooleanExample);
-        console.runExamples("Float Examples", console::printFloatExample);
-        console.runExamples("Double Examples", console::printDoubleExample);
-        console.runExamples("Long Examples", console::printLongExample);
-        console.runExamples("Byte Examples", console::printByteExample);
-        console.runExamples("Short Examples", console::printShortExample);
-    }
-
 }
 

@@ -1,15 +1,15 @@
 package org.mwatt.tutorial.operators;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 /*
     ++ -- - + * / %
  */
-@SuppressWarnings({"UnusedAssignment", "ConstantValue", "PointlessArithmeticExpression"})
-public class ArithmeticOperatorsTest extends ExampleTestBase {
+@SuppressWarnings("ALL")
+public class ArithmeticOperatorsTest {
 
     @Test
     public void prefixDecrement() {
@@ -153,19 +153,47 @@ public class ArithmeticOperatorsTest extends ExampleTestBase {
         assertEquals(0, d % d);
     }
 
-    public static void main(String[] args) {
-        ArithmeticOperatorsTest examples = new ArithmeticOperatorsTest();
+    @Test
+    public void divideByZero() {
+        int a = 10;
+        int b = 0;
+        try {
+            int result = a / b;
+            fail();
+            System.out.println("result = " + result);
 
-        examples.runExamples("Arithmetic postfix --", examples::postfixDecrement);
-        examples.runExamples("Arithmetic prefix --", examples::prefixDecrement);
-        examples.runExamples("Arithmetic postfix ++", examples::postfixIncrement);
-        examples.runExamples("Arithmetic prefix ++", examples::prefixIncrement);
-        examples.runExamples("Arithmetic unary -", examples::unaryMinus);
-        examples.runExamples("Arithmetic unary +", examples::unaryPlus);
-        examples.runExamples("Arithmetic addition", examples::addition);
-        examples.runExamples("Arithmetic subtraction", examples::subtraction);
-        examples.runExamples("Arithmetic multiplication", examples::multiplication);
-        examples.runExamples("Arithmetic division", examples::division);
-        examples.runExamples("Arithmetic modulus", examples::modulus);
+        } catch (ArithmeticException e) {
+            System.out.println("Caught exception: " + e);
+        }
+    }
+
+    @Test
+    public void modulusByZero() {
+        int a = 10;
+        int b = 0;
+        try {
+            int result = a % b;
+            fail();
+            System.out.println("result = " + result);
+
+        } catch (ArithmeticException e) {
+            System.out.println("Caught exception: " + e);
+        }
+    }
+
+    @Test void divideByZeroDouble() {
+        double a = 10;
+        double b = 0;
+        double result = a / b;
+        System.out.println("result = " + result);
+        assertEquals(Double.POSITIVE_INFINITY, result);
+    }
+
+    @Test void modulusByZeroDouble() {
+        double a = 10;
+        double b = 0;
+        double result = a % b;
+        System.out.println("result = " + result);
+        assertEquals(Double.NaN, result);
     }
 }

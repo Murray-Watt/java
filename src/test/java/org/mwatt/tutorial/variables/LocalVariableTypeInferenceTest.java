@@ -1,12 +1,12 @@
 package org.mwatt.tutorial.variables;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
-public class LocalVariableTypeInferenceTest extends ExampleTestBase {
+@SuppressWarnings({"unused", "UnnecessaryLocalVariable", "PointlessArithmeticExpression", "ConstantValue", "CommentedOutCode"})
+public class LocalVariableTypeInferenceTest {
     Double pi = 3.14159;
     // var x = 10; // Cannot use 'var' on field declaration
     static int a = 10;  // Cannot use 'var' on field declaration
@@ -80,10 +80,5 @@ public class LocalVariableTypeInferenceTest extends ExampleTestBase {
         for (var number : numbers) {
             System.out.println("number: " + number);
         }
-    }
-
-    public static void main(String[] args) {
-        var examples = new LocalVariableTypeInferenceTest();
-        examples.runExamples("Variables Example", examples::variablesExamples);
     }
 }

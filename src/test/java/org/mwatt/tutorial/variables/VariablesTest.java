@@ -1,7 +1,6 @@
 package org.mwatt.tutorial.variables;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 /*
     String      stores text, such as "Hello". String values are surrounded by double quotes
@@ -10,7 +9,7 @@ import org.mwatt.util.ExampleTestBase;
     char        stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
     boolean     stores values with two states: true or false
  */
-public class VariablesTest extends ExampleTestBase {
+public class VariablesTest {
 
     @Test
     public void variablesExamples() {
@@ -38,10 +37,5 @@ public class VariablesTest extends ExampleTestBase {
             boolean myBool = true;
             System.out.println(myBool);
         }
-    }
-
-    public static void main(String[] args) {
-        VariablesTest examples = new VariablesTest();
-        examples.runExamples("Variables Example", examples::variablesExamples);
     }
 }

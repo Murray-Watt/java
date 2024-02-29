@@ -1,10 +1,9 @@
 package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 // Thread safe
-public class StringBufferTest extends ExampleTestBase {
+public class StringBufferTest {
 
     @Test
     public void basicStringBufferExamples() {
@@ -24,11 +23,5 @@ public class StringBufferTest extends ExampleTestBase {
         StringBuffer buffer5 = new StringBuffer("Hello");
         buffer5.delete(0, 2);
         System.out.println(buffer5);
-    }
-
-    public static void main(String[] args) {
-        StringBufferTest examples = new StringBufferTest();
-
-        examples.runExamples("String Buffer", examples::basicStringBufferExamples);
     }
 }

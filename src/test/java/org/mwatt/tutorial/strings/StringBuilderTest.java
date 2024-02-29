@@ -1,12 +1,11 @@
 package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SuppressWarnings({"StringBufferReplaceableByString", "UnnecessaryToStringCall"})
-public class StringBuilderTest extends ExampleTestBase {
+public class StringBuilderTest {
 
     @Test
     public void stringBuilderConstructorExamples() {
@@ -269,23 +268,5 @@ public class StringBuilderTest extends ExampleTestBase {
         builder1.replace(0, 5, "World");
         System.out.println(builder1);
         assertEquals("World", builder1.toString());
-    }
-
-    public static void main(String[] args) {
-        StringBuilderTest examples = new StringBuilderTest();
-
-        examples.runExamples("constructions", examples::stringBuilderConstructorExamples);
-        examples.runExamples("basics examples", examples::basicStringBuilder);
-        examples.runExamples("append examples", examples::appendExamples);
-        examples.runExamples("compare examples", examples::compareExamples);
-        examples.runExamples("insert examples", examples::insertExamples);
-        examples.runExamples("delete examples", examples::deleteExamples);
-        examples.runExamples("replace examples", examples::replaceExamples);
-        examples.runExamples("index examples", examples::indexOfExamples);
-        examples.runExamples("lastIndexOf examples", examples::lastIndexOfExamples);
-        examples.runExamples("reverseExamples", examples::reverseExamples);
-        examples.runExamples("subStringExamples", examples::subStringExamples);
-        examples.runExamples("toString Examples", examples::toStringExamples);
-        examples.runExamples("trimToSize Examples", examples::trimToSizeExamples);
     }
 }

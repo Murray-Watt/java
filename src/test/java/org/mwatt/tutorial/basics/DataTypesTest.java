@@ -1,7 +1,5 @@
 package org.mwatt.tutorial.basics;
 
-import org.mwatt.util.ExampleTestBase;
-
 /*
     byte	1 byte	    -128 to 127
     short	2 bytes	    -32,768 to 32,767
@@ -12,9 +10,11 @@ import org.mwatt.util.ExampleTestBase;
     boolean	1 bit	    Stores true or false values
     char	2 bytes 	Stores a single character/letter or ASCII values
  */
-public class DataTypesTest extends ExampleTestBase {
+public class DataTypesTest {
     public void dataTypeExamples() {
-        runExample(() -> {
+        {
+            {
+            }
             byte b = 100;
             System.out.println("byte b = " + b);
 
@@ -26,9 +26,9 @@ public class DataTypesTest extends ExampleTestBase {
 
             b = -128;
             System.out.println("byte b = " + b);
-        });
+        };
 
-        runExample(() -> {
+        {
             short s = 10000;
             System.out.println("short s = " + s);
 
@@ -40,9 +40,9 @@ public class DataTypesTest extends ExampleTestBase {
 
             s = -32768;
             System.out.println("short s = " + s);
-        });
+        };
 
-        runExample(() -> {
+        {
             int i = 100000;
             System.out.println("int i = " + i);
 
@@ -54,9 +54,9 @@ public class DataTypesTest extends ExampleTestBase {
 
             i = -2147483648;
             System.out.println("int i = " + i);
-        });
+        };
 
-        runExample(() -> {
+        {
             long l = 10000000000L;
             System.out.println("long l = " + l);
 
@@ -68,9 +68,9 @@ public class DataTypesTest extends ExampleTestBase {
 
             l = -9223372036854775808L;
             System.out.println("long l = " + l);
-        });
+        };
 
-        runExample(() -> {
+        {
             float f = 123.456f;
             System.out.println("float f = " + f);
 
@@ -82,9 +82,9 @@ public class DataTypesTest extends ExampleTestBase {
 
             f = -3.4028235E38f;
             System.out.println("float f = " + f);
-        });
+        };
 
-        runExample(() -> {
+        {
             double d = 123.456;
             System.out.println("double d = " + d);
 
@@ -96,27 +96,22 @@ public class DataTypesTest extends ExampleTestBase {
 
             d = -1.7976931348623157E308;
             System.out.println("double d = " + d);
-        });
+        };
 
-        runExample(() -> {
+        {
             boolean b = true;
             System.out.println("boolean b = " + b);
 
             b = false;
             System.out.println("boolean b = " + b);
-        });
+        };
 
-        runExample(() -> {
+        {
             char c = 'A';
             System.out.println("char c = " + c);
 
             c = 65;
             System.out.println("char c = " + c);
-        });
-    }
-
-    public static void main(String[] args) {
-        DataTypesTest examples = new DataTypesTest();
-        examples.runExamples("Data Type Examples", examples::dataTypeExamples);
+        };
     }
 }

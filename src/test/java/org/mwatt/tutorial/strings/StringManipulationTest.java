@@ -1,7 +1,6 @@
 package org.mwatt.tutorial.strings;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     subSequence
  */
 @SuppressWarnings({"WrapperTypeMayBePrimitive", "unused"})
-public class StringManipulationTest extends ExampleTestBase {
+public class StringManipulationTest {
     @SuppressWarnings("InnerClassMayBeStatic")
     class HelloClass {
         @Override
@@ -178,18 +177,5 @@ public class StringManipulationTest extends ExampleTestBase {
         System.out.print("str.split(\",\"): ");
         Arrays.stream(str.split(",")).forEach(System.out::println);
         assertEquals(2, str.split(",").length);
-    }
-
-    public static void main(String[] args) {
-        StringManipulationTest examples = new StringManipulationTest();
-
-        examples.runExamples("String concatination", examples::concatenationExamples);
-        examples.runExamples("String join", examples::joinExamples);
-        examples.runExamples("String replace", examples::replaceExamples);
-        examples.runExamples("String replaceAll", examples::replaceAllExamples);
-        examples.runExamples("String replaceFirst", examples::replaceFirstExamples);
-        examples.runExamples("String split", examples::splitExamples);
-        examples.runExamples("String subSequence", examples::subSequenceExamples);
-        examples.runExamples("String substring", examples::substringExamples);
     }
 }

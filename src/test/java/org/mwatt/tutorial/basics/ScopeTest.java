@@ -1,11 +1,10 @@
 package org.mwatt.tutorial.basics;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.util.ExampleTestBase;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ScopeTest extends ExampleTestBase {
+public class ScopeTest {
 
     enum AgeCategory {
         PUPPY(0,2, "puppy"),
@@ -215,11 +214,5 @@ public class ScopeTest extends ExampleTestBase {
             int x = Integer.MAX_VALUE;
             System.out.println("Finally " + x);
         }
-    }
-
-    public static void main(String[] args) {
-        ScopeTest scopeTest = new ScopeTest();
-        scopeTest.runExamples("Class Scope Examples", scopeTest::classScope);
-        scopeTest.runExamples("Try Catch Finally Scope Examples", scopeTest::tryCatchFinallyScope);
     }
 }

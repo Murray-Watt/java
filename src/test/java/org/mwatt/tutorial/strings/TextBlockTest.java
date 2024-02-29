@@ -1,8 +1,8 @@
 package org.mwatt.tutorial.strings;
 
-import org.mwatt.util.ExampleTestBase;
+import org.junit.jupiter.api.Test;
 
-public class TextBlockTest extends ExampleTestBase {
+public class TextBlockTest {
 
     public void textBlockExample() {
         String textBlock = """
@@ -15,6 +15,7 @@ public class TextBlockTest extends ExampleTestBase {
     //Escaping in text blocks
 
     //The text block delimiter is three double quotes (""") and the text block ends with three double quotes (""").
+    @Test
     public void textBlockEscapingExample() {
         String textBlock = """
             This is a text block
@@ -23,10 +24,5 @@ public class TextBlockTest extends ExampleTestBase {
             You can escape the delimiter with a backslash like this: \"""
             """;
         System.out.println(textBlock);
-    }
-    public static void main(String[] args) {
-        TextBlockTest examples = new TextBlockTest();
-
-        examples.runExamples("Text Block Examples", examples::textBlockExample);
     }
 }
