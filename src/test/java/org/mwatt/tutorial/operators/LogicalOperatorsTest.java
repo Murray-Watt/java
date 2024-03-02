@@ -7,9 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class LogicalOperatorsTest {
     @Test
     public void bitWiseNegate() {
-        byte a = (byte) 0b00000000;
-        byte b = (byte) 0b11111111;
-        byte c = (byte) 0b01010101;
+        byte a = 0b00000000;
+        byte b = (byte) -1;
+        byte c = 0b01010101;
         byte d = (byte) 0b10101010;
 
         assertEquals(-1, ~a);
@@ -21,9 +21,9 @@ public class LogicalOperatorsTest {
 
     @Test
     public void bitWiseAnd() {
-        byte a = (byte) 0b00000000;
+        byte a = 0b00000000;
         byte b = (byte) 0b11111111;
-        byte c = (byte) 0b01010101;
+        byte c = 0b01010101;
         byte d = (byte) 0b10101010;
 
         assertEquals(0, a & b);
@@ -34,9 +34,9 @@ public class LogicalOperatorsTest {
 
     @Test
     public void bitWiseOr() {
-        byte a = (byte) 0b00000000;
+        byte a = 0b00000000;
         byte b = (byte) 0b11111111;
-        byte c = (byte) 0b01010101;
+        byte c = 0b01010101;
         byte d = (byte) 0b10101010;
 
         assertEquals(-1, a | b);
@@ -47,9 +47,9 @@ public class LogicalOperatorsTest {
 
     @Test
     public void bitWiseXor() {
-        byte a = (byte) 0b00000000;
+        byte a = 0b00000000;
         byte b = (byte) 0b11111111;
-        byte c = (byte) 0b01010101;
+        byte c = 0b01010101;
         byte d = (byte) 0b10101010;
 
         assertEquals(b, a ^ b);
@@ -64,40 +64,44 @@ public class LogicalOperatorsTest {
 
     @Test
     public void leftShift() {
-        byte a = (byte) 0b00000000;
-        byte b = (byte) 0b11111111;
-        byte c = (byte) 0b01010101;
+        byte a = 0b00000000;
+        byte b = -1;
+        byte c = 0b01010101;
         byte d = (byte) 0b10101010;
+        int cResult = -86;
+        int dResult = 84;
 
-        assertEquals(0b00000000, a << 1);
-        assertEquals(0b11111110, b << 1);
-        assertEquals(0b10101010, c << 1);
-        assertEquals(0b01010100, d << 1);
+        assertEquals(0, a << 1);
+        assertEquals(-2, b << 1);
+        assertEquals(cResult,(byte) (c << 1));
+        assertEquals(dResult,(byte) (d << 1));
     }
 
     @Test
     public void rightShift() {
-        byte a = (byte) 0b00000000;
-        byte b = (byte) 0b11111111;
-        byte c = (byte) 0b01010101;
+        byte a = 0;
+        byte b = (byte) -1;
+        byte c = 0b01010101;
         byte d = (byte) 0b10101010;
 
-        assertEquals(0b00000000, a >> 1);
-        assertEquals(0b01111111, b >> 1);
+        assertEquals(0, a >> 1);
+        assertEquals(-1, (b >> 1));
         assertEquals(0b00101010, c >> 1);
-        assertEquals(0b11010101, d >> 1);
+        assertEquals(-43, d >> 1);
     }
 
     @Test
     public void unsignedRightShift() {
-        byte a = (byte) 0b00000000;
-        byte b = (byte) 0b11111111;
-        byte c = (byte) 0b01010101;
+        byte a = 0;
+        byte b = (byte) -1;
+        byte c = 0b01010101;
         byte d = (byte) 0b10101010;
+        int bResult = 2147483647;
+        int dResult = 2147483605;
 
-        assertEquals(0b00000000, a >>> 1);
-        assertEquals(0b01111111, b >>> 1);
+        assertEquals(0, a >>> 1);
+        assertEquals(bResult, b >>> 1);
         assertEquals(0b00101010, c >>> 1);
-        assertEquals(0b11010101, d >>> 1);
+        assertEquals(dResult, d >>> 1);
     }
 }

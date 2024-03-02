@@ -183,12 +183,71 @@ public class SwitchTest {
         }
     }
 
-    public static void main(String[] args) {
-        SwitchTest switchTest = new SwitchTest();
-        switchTest.intSwitch();
-        switchTest.integerSwitch();
-        switchTest.enumSwitch();
-        switchTest.stringSwitch();
-        switchTest.lambdaSwitch();
+    @Test
+    public void switchWithExpressionsInCases() {
+        int day = random.nextInt(1,7);
+
+        switch (day) {
+            case 1 -> System.out.println("Today is " + Day.MONDAY);
+            case 1 + 1-> System.out.println("Today is " + Day.TUESDAY);
+            case 1 + 2 -> System.out.println("Today is " + Day.WEDNESDAY);
+            case 2 + 2 -> System.out.println("Today is " + Day.THURSDAY);
+            case 1 + 4 -> System.out.println("Today is " + Day.FRIDAY);
+            case 7 -1 -> System.out.println("Today is " + Day.SATURDAY);
+            case 2 * 3 + 1 -> System.out.println("Today is " + Day.SUNDAY);
+            default -> System.out.println("Invalid day");
+        }
+    }
+
+    @Test
+    public void switchWithExpressionInSwitchExpression() {
+        int day = random.nextInt(1,7);
+
+        switch (day == 7 ? 1 : day + 1) {
+            case 1 -> System.out.println("Today is " + Day.MONDAY);
+            case 2 -> System.out.println("Today is " + Day.TUESDAY);
+            case 3 -> System.out.println("Today is " + Day.WEDNESDAY);
+            case 4 -> System.out.println("Today is " + Day.THURSDAY);
+            case 5 -> System.out.println("Today is " + Day.FRIDAY);
+            case 6 -> System.out.println("Today is " + Day.SATURDAY);
+            case 7 -> System.out.println("Today is " + Day.SUNDAY);
+            default -> System.out.println("Invalid day");
+        }
+    }
+
+    @Test
+    public void switchWithByteSwitch() {
+        byte day = (byte) random.nextInt(1,7);
+
+        switch (day) {
+            case 1:
+                System.out.println("Today is Monday");
+                break;
+            case 2:
+                System.out.println("Today is Tuesday");
+                break;
+            case 3:
+                System.out.println("Today is Wednesday");
+                break;
+            case 4:
+                System.out.println("Today is Thursday");
+                break;
+            case 5:
+                System.out.println("Today is Friday");
+                break;
+            case 6:
+                System.out.println("Today is Saturday");
+                break;
+            case 7:
+                System.out.println("Today is Sunday");
+                break;
+// Invalid because the byte range is -128 to 127
+//            case 1000:
+//                System.out.println("Today is a special day");
+//                break;
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
     }
 }
