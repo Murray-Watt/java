@@ -3,6 +3,7 @@ package org.mwatt.tutorial.strings;
 import org.junit.jupiter.api.Test;
 
 // Thread safe
+@SuppressWarnings({"SpellCheckingInspection", "StringBufferReplaceableByString"})
 public class StringBufferTest {
 
     @Test

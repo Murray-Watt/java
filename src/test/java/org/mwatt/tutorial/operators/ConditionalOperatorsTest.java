@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SuppressWarnings({"PointlessBooleanExpression", "DuplicateCondition", "SimplifiableAssertion", "ConstantValue"})
 public class ConditionalOperatorsTest {
 
     @Test

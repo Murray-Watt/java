@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.*;
 
+@SuppressWarnings({"Convert2MethodRef", "ConstantValue", "CodeBlock2Expr", "unused"})
 public class LambdaTest {
 
     @Test

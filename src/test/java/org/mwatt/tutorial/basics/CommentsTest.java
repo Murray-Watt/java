@@ -5,9 +5,10 @@ package org.mwatt.tutorial.basics;
      that can be used to document
      classes, methods, and fields
  */
+@SuppressWarnings("unused")
 public class CommentsTest {
     public void commentsExamples() {
-        // This is a single line comment")
+        // This is a single line comment
 
         /* This is a multi-line comment
            that spans multiple lines */
