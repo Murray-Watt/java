@@ -1,10 +1,10 @@
 package org.mwatt.tutorial.flow;
 
-import com.sun.net.httpserver.Authenticator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
+@SuppressWarnings("ConstantValue")
 public class IfElseTest {
     @Test
     public void ifStatement() {

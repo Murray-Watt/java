@@ -4,8 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@SuppressWarnings({"unused", "divzero", "SpellCheckingInspection"})
 public class ScopeTest {
 
+    @SuppressWarnings("LombokGetterMayBeUsed")
     enum AgeCategory {
         PUPPY(0,2, "puppy"),
         ADULT(3,5, "adult"),
@@ -64,6 +66,7 @@ public class ScopeTest {
         }
     }
 
+    @SuppressWarnings("LombokSetterMayBeUsed")
     static class Pet {
         // Class scope
         static String species = "Unknown Species";

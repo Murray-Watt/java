@@ -2,7 +2,7 @@ package org.mwatt.tutorial.flow;
 
 import org.junit.jupiter.api.Test;
 
-public class ForEachLoop {
+public class ForEachLoopTest {
     @Test
     public void basicForEachLoop() {
         int[] numbers = {1, 2, 3, 4, 5};

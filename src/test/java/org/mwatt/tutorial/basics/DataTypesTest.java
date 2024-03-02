@@ -1,5 +1,7 @@
 package org.mwatt.tutorial.basics;
 
+import org.junit.jupiter.api.Test;
+
 /*
     byte	1 byte	    -128 to 127
     short	2 bytes	    -32,768 to 32,767
@@ -10,7 +12,10 @@ package org.mwatt.tutorial.basics;
     boolean	1 bit	    Stores true or false values
     char	2 bytes 	Stores a single character/letter or ASCII values
  */
+@SuppressWarnings({"ConstantValue", "DataFlowIssue", "ReassignedVariable"})
 public class DataTypesTest {
+
+    @Test
     public void dataTypeExamples() {
         {
             {
@@ -26,7 +31,7 @@ public class DataTypesTest {
 
             b = -128;
             System.out.println("byte b = " + b);
-        };
+        }
 
         {
             short s = 10000;
@@ -40,7 +45,7 @@ public class DataTypesTest {
 
             s = -32768;
             System.out.println("short s = " + s);
-        };
+        }
 
         {
             int i = 100000;
@@ -54,7 +59,7 @@ public class DataTypesTest {
 
             i = -2147483648;
             System.out.println("int i = " + i);
-        };
+        }
 
         {
             long l = 10000000000L;
@@ -68,7 +73,7 @@ public class DataTypesTest {
 
             l = -9223372036854775808L;
             System.out.println("long l = " + l);
-        };
+        }
 
         {
             float f = 123.456f;
@@ -82,7 +87,7 @@ public class DataTypesTest {
 
             f = -3.4028235E38f;
             System.out.println("float f = " + f);
-        };
+        }
 
         {
             double d = 123.456;
@@ -96,7 +101,7 @@ public class DataTypesTest {
 
             d = -1.7976931348623157E308;
             System.out.println("double d = " + d);
-        };
+        }
 
         {
             boolean b = true;
@@ -104,7 +109,7 @@ public class DataTypesTest {
 
             b = false;
             System.out.println("boolean b = " + b);
-        };
+        }
 
         {
             char c = 'A';
@@ -112,6 +117,6 @@ public class DataTypesTest {
 
             c = 65;
             System.out.println("char c = " + c);
-        };
+        }
     }
 }
