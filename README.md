@@ -104,6 +104,20 @@ TextBlocksTest.java
 3. [ ] translateEscapes examples
 4. [ ] //formatted examples
 
+### Formatting
+SimpleDateFormatTest.java
+formattingDates
+
+StringFormattingTest.java
+1. [ ] formattingDates
+2. [ ] formattingIntegers
+3. [ ] formatTime
+4. [ ] formatDateTimeWithTimeZone
+5. [ ] formatToUpperCase
+6. [ ] formattingString
+7. [ ] formatDateTime
+8. [ ] formattingFloatingPoint
+
 ## Operators
 
 ### Number of operands

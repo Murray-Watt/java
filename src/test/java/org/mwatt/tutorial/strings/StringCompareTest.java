@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
         isBlank
  */
 @SuppressWarnings({"StringOperationCanBeSimplified", "StringEquality", "ConstantValue", "NewObjectEquality", "StringBufferMayBeStringBuilder", "unused"})
-public class StringCompareTests {
+public class StringCompareTest {
     @Test
     public void objectEqualsExamples() {
         String s1 = "Hello";
