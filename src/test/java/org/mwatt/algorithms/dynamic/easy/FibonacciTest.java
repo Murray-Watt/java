@@ -1,9 +1,8 @@
-package org.mwatt.algorithms.numberic;
+package org.mwatt.algorithms.dynamic.easy;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.algorithms.dynamic.easy.Fibonacci;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FibonacciTest {
 

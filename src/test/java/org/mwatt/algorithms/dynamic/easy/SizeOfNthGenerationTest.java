@@ -1,7 +1,6 @@
-package org.mwatt.algorithms.numberic;
+package org.mwatt.algorithms.dynamic.easy;
 
 import org.junit.jupiter.api.Test;
-import org.mwatt.algorithms.dynamic.easy.SizeOfNthGeneration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
