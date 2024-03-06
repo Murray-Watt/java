@@ -8,6 +8,7 @@ class FibonacciTest {
 
     @Test
     public void fibonacci() {
+
         Fibonacci fibonacci = new Fibonacci();
         assertEquals(0, fibonacci.fibonacciRecursive(0));
         assertEquals(1, fibonacci.fibonacciRecursive(1));
