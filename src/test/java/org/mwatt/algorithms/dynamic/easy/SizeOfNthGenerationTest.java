@@ -10,45 +10,45 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     Each time you can either climb 1 or 2 steps.
     In how many distinct ways can you climb to the top?
  */
-class SizeOfNthGenerationTest {
+class sizeOfNthPascalsTriangleTest {
 
     @Test
-    void sizeOfNthGenerationRecursive() {
-        SizeOfNthGeneration sizeOfNthGeneration = new SizeOfNthGeneration();
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(1),1);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(2),2);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(3), 3);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(4), 5);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(5), 8);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(6), 13);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(7), 21);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationRecursive(8), 34);
+    void sizeOfNthPascalsTriangleRecursive() {
+        StaircaseClimbing sizeOfNthPascalsTriangle = new StaircaseClimbing();
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(1),1);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(2),2);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(3), 3);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(4), 5);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(5), 8);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(6), 13);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(7), 21);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbRecursive(8), 34);
     }
 
     @Test
-    void sizeOfNthGenerationDynamicProgramming() {
-        SizeOfNthGeneration sizeOfNthGeneration = new SizeOfNthGeneration();
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(1),1);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(2),2);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(3), 3);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(4), 5);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(5), 8);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(6), 13);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(7), 21);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGenerationDynamicProgramming(8), 34);
+    void sizeOfNthPascalsTriangleDynamicProgramming() {
+        StaircaseClimbing sizeOfNthPascalsTriangle = new StaircaseClimbing();
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(1),1);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(2),2);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(3), 3);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(4), 5);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(5), 8);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(6), 13);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(7), 21);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbDynamicProgramming(8), 34);
     }
 
     @Test
-    void sizeOfNthGenerationDynamicProgrammingSpaceOptimized() {
-        SizeOfNthGeneration sizeOfNthGeneration = new SizeOfNthGeneration();
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(1),1);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(2),2);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(3), 3);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(4), 5);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(5), 8);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(6), 13);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(7), 21);
-        assertEquals(sizeOfNthGeneration.sizeOfNthGeneration(8), 34);
+    void sizeOfNthPascalsTriangleDynamicProgrammingSpaceOptimized() {
+        StaircaseClimbing sizeOfNthPascalsTriangle = new StaircaseClimbing();
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(1),1);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(2),2);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(3), 3);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(4), 5);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(5), 8);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(6), 13);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(7), 21);
+        assertEquals(sizeOfNthPascalsTriangle.waysToClimbSpaceOptimized(8), 34);
     }
 
 }

@@ -3,7 +3,10 @@ package org.mwatt.algorithms.dynamic.easy;
 public class MinCostPath {
 
     // Recursive implementation to choose the minimum cost path
-    private int chooseMinPath(int[] cost, int currentStep, int targetStep, int costSoFar) {
+    private int chooseMinPathRecursiveStep(int[] cost,
+                                           int currentStep,
+                                           int targetStep,
+                                           int costSoFar) {
         int stepsRemaining = targetStep - currentStep;
 
         // Base case: if no steps remaining, return the current cost
@@ -20,16 +23,16 @@ public class MinCostPath {
         }
 
         // Choose the minimum cost path by considering one-step and two-step options
-        int oneStepCost = chooseMinPath(cost, currentStep + 1, targetStep, newCost);
-        int twoStepCost = chooseMinPath(cost, currentStep + 2, targetStep, newCost);
+        int oneStepCost = chooseMinPathRecursiveStep(cost, currentStep + 1, targetStep, newCost);
+        int twoStepCost = chooseMinPathRecursiveStep(cost, currentStep + 2, targetStep, newCost);
 
         return Math.min(oneStepCost, twoStepCost);
     }
 
     // Recursive method to find the minimum cost starting from either step 0 or step 1
     public int minCostRecursive(int[] cost) {
-        int start0 = chooseMinPath(cost, 0, cost.length, 0);
-        int start1 = chooseMinPath(cost, 1, cost.length, 0);
+        int start0 = chooseMinPathRecursiveStep(cost, 0, cost.length, 0);
+        int start1 = chooseMinPathRecursiveStep(cost, 1, cost.length, 0);
 
         return Math.min(start0, start1);
     }

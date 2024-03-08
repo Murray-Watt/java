@@ -5,6 +5,9 @@ import java.util.Map;
 import java.util.Stack;
 
 public class MatchBrackets {
+
+    // Uses a StringBuilder to remove matching brackets
+    // Returns true if the string is valid, false otherwise
     public boolean isValidStringBuilder(String s) {
         if (s.length() % 2 == 1) {
             return false;
@@ -58,6 +61,8 @@ public class MatchBrackets {
         return previousIndex == -1;
     }
 
+    // Uses an array-based stack to track bracket matches
+    // Returns true if the string is valid, false otherwise
     public boolean isValidTimeOptimized(String s) {
         if (s.length() % 2 == 1) {
             return false;
@@ -98,6 +103,8 @@ public class MatchBrackets {
         return stackIndex == 0;
     }
 
+    // Uses a stack without a map to track bracket matches
+    // Returns true if the string is valid, false otherwise
     public boolean isValidNoMap(String s) {
         if (s.length() % 2 == 1) {
             return false;
@@ -142,6 +149,8 @@ public class MatchBrackets {
         put(']', '[');
     }};
 
+    // Uses a stack and a map to track bracket matches
+    // Returns true if the string is valid, false otherwise
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 

@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class SemaphoreTest {
 
     @Test
-    public void canAcquire() throws InterruptedException {
+    public void canAcquire() {
         Semaphore semaphore = new Semaphore(1);
 
         // Try to acquire the semaphore
