@@ -1,4 +1,4 @@
-# Java Tutorials
+# Java Explained: Java Language Tutorials
 
 ## Introduction 
 

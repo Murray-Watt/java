@@ -1,4 +1,4 @@
-# JDK Enhancements by Version
+# Java Explained: JDK Enhancements by Version
 
 ## New to JDK 8 LTS
 
