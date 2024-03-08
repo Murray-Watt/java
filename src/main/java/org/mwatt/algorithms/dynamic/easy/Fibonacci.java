@@ -2,6 +2,7 @@ package org.mwatt.algorithms.dynamic.easy;
 
 public class Fibonacci {
 
+    // Intuitive recursive implementation of the Fibonacci sequence
     public int fibonacciRecursive(int n) {
         if (n == 0) {
             return 0;
@@ -12,6 +13,10 @@ public class Fibonacci {
         }
     }
 
+    // Dynamic programming implementation of the Fibonacci sequence
+    //
+    // This approach uses an array to store intermediate results,
+    // reducing redundant calculations and stack space and thus improving the time complexity.
     public int fibonacciDynamicProgramming(int n) {
         if (n <= 1) {
             return n;
@@ -25,7 +30,8 @@ public class Fibonacci {
         return dp[n];
     }
 
-
+    // Space-optimized dynamic programming implementation of the Fibonacci sequence
+    // This approach reduces the space complexity by only storing the two most recent values.
     public int fibDynamicProgrammingSpaceOptimized(int n) {
         if (n <= 1) {
             return n;
