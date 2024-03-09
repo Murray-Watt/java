@@ -272,6 +272,7 @@ BreakToLabelTest.java
 - createStreamOfElements
 - createEmptyStream
 
+[Java Explained: Concurrency in Java](#concurrency-in-java)
 ## Concurrency
 
 ### Thread Synchronization
@@ -331,21 +332,21 @@ by sending messages to each other. This model can help manage concurrency by iso
 and avoiding shared mutable state.
 
 ### CountDownLatch
+[CountDownLatchTest.java](../src/main/java/com/javacodegeeks/concurrency/CountDownLatchTest.java)
+
 CountDownLatch is a synchronization aid that allows one or more threads to wait until a set of 
 operations being performed in other threads completes.
 
-CountDownLatchTest.java
-
 ### CyclicBarrier
+[CyclicBarrierTest.java](../src/main/java/com/javacodegeeks/concurrency/CyclicBarrierTest.java)
+
 CyclicBarrier is a synchronization aid that allows a set of threads to wait at a barrier 
 until all threads in the set have reached the barrier.
 
-CyclicBarrierTest.java
-
 ### Runnable 
-Runnable is an interface that package a section of code (task, job) that can be executed/run.
+[RunnableTest.java](../src/main/java/com/javacodegeeks/concurrency/RunnableTest.java)
 
-RunnableTest.java
+Runnable is an interface that package a section of code (task, job) that can be executed/run.
 
 ### Executor (Java 8)
 Executor is an interface that provides a way of decoupling task submission from the mechanics 
@@ -356,6 +357,7 @@ ExecutorTest.java
 
 
 #### ExecutorService
+[ExecutorServiceTest.java](../src/main/java/com/javacodegeeks/concurrency/ExecutorServiceTest.java)
 
 ExecutorService extends Executor and provides additional methods for managing and interacting 
 with the executor and its tasks. You can think of ExecutorService as a more feature-rich 
@@ -384,22 +386,28 @@ or terminated if unused for a certain period.
 These classes provide different strategies for executing tasks asynchronously and managing 
 threads, allowing you to choose the one that best fits your application's requirements.
 
-ExecutorServiceTest.java
 
 ### Future
+[FutureTest.java](../src/main/java/com/javacodegeeks/concurrency/FutureTest.java)
+
 Future represents the result of an asynchronous computation. It provides methods for 
 checking if the computation is complete, waiting for the result, and canceling the computation.
 
-FutureTest.java
-
 ### Thread, Joining (thread.join), Forking (thread.start), Sleep (Thread.sleep)
-ThreadTest.java
+[ThreadTest.java](../src/main/java/com/javacodegeeks/concurrency/ThreadTest.java)
+
+When you create a thread by instantiating the Thread class directly, 
+you typically create a new instance of Thread and pass a Runnable object to its constructor.
 
 - threadStartAndJoin
 - threadInterrupt
 - threadJoin
 - joinAll
 - threadSleep
+
+### ThreadFactory
+[ThreadFactoryTest.java](../src/main/java/com/javacodegeeks/concurrency/ThreadFactoryTest.java)
+
 
 
 
