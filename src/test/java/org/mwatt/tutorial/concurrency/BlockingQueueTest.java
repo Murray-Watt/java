@@ -9,8 +9,9 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Examples demonstrating the use of the BlockingQueue class for managing
- * a blocking queue of elements.
+ *
+ *
+ *
  */
 public class BlockingQueueTest {
 

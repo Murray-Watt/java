@@ -134,10 +134,12 @@ public class ThreadTest {
     @Test
     public void threadSleep() throws InterruptedException {
         System.out.println("Thread started");
+        long startTime = System.currentTimeMillis();
         Thread.sleep(1000);
+        long endTime = System.currentTimeMillis();
         System.out.println("Thread completed");
 
-        assertFalse(Thread.currentThread().isAlive());
+        assertTrue(endTime - startTime >= 1000); // Check if at least 1000ms have passed
     }
 
     /**

@@ -8,7 +8,6 @@ import java.util.concurrent.CyclicBarrier;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class BrokenBarrierExceptionTest {
-
     @Test
     public void brokenBarrierException() {
         CyclicBarrier cyclicBarrier = new CyclicBarrier(2);
@@ -17,15 +16,13 @@ public class BrokenBarrierExceptionTest {
         Thread thread1 = new Thread(() -> {
             try {
                 cyclicBarrier.await();
-            } catch (InterruptedException | BrokenBarrierException e) {
-                e.printStackTrace();
+            } catch (InterruptedException | BrokenBarrierException _) {
             }
         });
         Thread thread2 = new Thread(() -> {
             try {
                 cyclicBarrier.await();
-            } catch (InterruptedException | BrokenBarrierException e) {
-                e.printStackTrace();
+            } catch (InterruptedException | BrokenBarrierException _) {
             }
         });
 
@@ -37,11 +34,10 @@ public class BrokenBarrierExceptionTest {
         try {
             thread1.join();
             thread2.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        } catch (InterruptedException _) {
         }
 
         // Attempt to await the barrier again, which should throw a BrokenBarrierException
-        assertThrows(BrokenBarrierException.class, () -> cyclicBarrier.await());
+        assertThrows(BrokenBarrierException.class, cyclicBarrier::await);
     }
 }
