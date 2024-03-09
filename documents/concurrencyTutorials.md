@@ -405,6 +405,26 @@ as well as methods for advancing to the next phase (arriveAndDeregister()), and 
 arrived (getArrivedParties()). This flexible synchronization mechanism allows threads to coordinate their execution 
 and progress together through a series of phases.
 
+# Java Locks
+
+In Java, locks are used to manage access to shared resources in a multithreaded environment, ensuring that only one thread can access the resource at a time. Java provides several types of locks, each with its own characteristics and use cases. Some common types of locks in Java include:
+
+1. **ReentrantLock**: This is a general-purpose lock that can be used in place of synchronized blocks. It provides more flexibility and features than synchronized, such as the ability to try to acquire the lock without blocking (`tryLock()`), setting a timeout for acquiring the lock (`tryLock(long timeout, TimeUnit unit)`), and more.
+   [ReentrantLockTest.java](../src/test/java/org/mwatt/tutorial/concurrency/ReentrantLockTest.java)
+2. **ReentrantReadWriteLock**: This lock maintains a pair of associated locks, one for read-only operations and one for write operations. Multiple threads can hold the read lock simultaneously, but only one thread can hold the write lock, and no threads can hold the read lock when the write lock is held.
+
+3. **StampedLock**: Introduced in Java 8, this lock provides a set of non-exclusive read locks, and one exclusive write lock. It also supports optimistic locking, where a thread can try to read or write without acquiring the lock, but needs to validate afterward if the lock is still valid.
+
+4. **Condition**: Conditions are used with locks to provide a way for threads to suspend execution until a particular condition is met. Conditions are created by the `Lock` implementations and can be used with methods like `await()`, `signal()`, and `signalAll()`.
+
+5. **LockSupport**: This class provides low-level support for locking and unlocking threads. It can be used to park and unpark threads, effectively putting them to sleep and waking them up.
+
+6. **Fairness**: Locks in Java can be either fair or unfair. Fair locks try to ensure that threads acquire the lock in the order they requested it (FIFO), while unfair locks do not guarantee any particular order.
+
+These locks provide different ways to manage access to shared resources in Java, allowing developers to choose the most appropriate lock for their specific needs.
+
+In Java, the synchronized keyword can be considered a basic form of lock. It provides a simple and convenient way to achieve mutual exclusion in multithreaded programs. When a method or block is marked as synchronized, only one thread can execute it at a time, preventing concurrent access to shared resources. While not as flexible or powerful as the explicit lock classes (ReentrantLock, ReadWriteLock, etc.), synchronized can be sufficient for many synchronization needs.
+
 
 
 
