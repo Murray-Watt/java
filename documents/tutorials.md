@@ -142,6 +142,8 @@ In many cases, the terms are used interchangeably or in a way that implies they 
 
 [Java Explained: Collections in Java](#collectionTutorials.md)
 
+[Java Explained: Streams](#streamsTutorials.md)
+
 
 
 
