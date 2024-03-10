@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SuppressWarnings({"SimplifyStreamApiCallChains", "ReplaceInefficientStreamCount"})
-public class StreamTerminalOperationTest {
+public class StreamTerminalOperationsTest {
     @Test
     public void performForEach() {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
