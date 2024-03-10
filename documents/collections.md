@@ -1,4 +1,4 @@
-### Summary of Java Collection Classes
+### Java Explained: Collections in Java
 
 #### List Implementations
 - **ArrayList**: Dynamic array that grows as needed. Not synchronized.

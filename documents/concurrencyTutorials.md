@@ -1,28 +1,11 @@
 #Java Explained: Concurrency in Java
 Murray Watt 2024-03-08
 
-## Thread Synchronization
-
-Techniques used to coordinate the execution of threads to avoid conflicts
-and ensure data consistency. This includes mechanisms like locks, semaphores, and barriers.
-
-## Parallelism vs. Concurrency
-
-Understanding the difference between these two concepts. Parallelism involves executing
-multiple tasks simultaneously, while concurrency involves making progress on multiple tasks
-over a period of time.
-
 ## Deadlocks and Race Condition
 
 Common issues in concurrent programming. Deadlocks occur when two or more threads are
 waiting for each other to release resources, while race conditions occur when the outcome
 of a program depends on the timing or interleaving of threads.
-
-## Thread Safety
-
-Ensuring that data shared between threads is accessed in a way that avoids conflicts
-and maintains data integrity. This often involves using synchronization mechanisms
-like locks or atomic operations.
 
 ## Futures and Promises
 
@@ -454,7 +437,11 @@ Java provides several thread-safe collections that can be used in concurrent env
 
 These thread-safe collections provide various levels of concurrency support and can be chosen based on the specific requirements of the application.
 
+## Thread Safety
 
+Ensuring that data shared between threads is accessed in a way that avoids conflicts
+and maintains data integrity. This often involves using synchronization mechanisms
+like locks or atomic operations.
 
 
 
