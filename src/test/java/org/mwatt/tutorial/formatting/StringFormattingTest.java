@@ -15,7 +15,6 @@ import java.util.TimeZone;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringFormattingTest {
-
     @Test
     public void formattingString() {
         String s1 = "Hello";
@@ -211,5 +210,18 @@ public class StringFormattingTest {
         System.out.printf("s1: %S.", s1);
         System.out.println();
         assertEquals("s1: HELLO.", String.format("s1: %S.", s1));
+    }
+
+    @Test
+    public void formatCurrency() {
+        double d1 = 123456.78;
+
+        System.out.printf("d1: %,.2f.", d1);
+        System.out.println();
+        assertEquals("d1: 123,456.78.", String.format("d1: %,.2f.", d1));
+
+        System.out.printf("d1: $%,.2f.", d1);
+        System.out.println();
+        assertEquals("d1: $123,456.78.", String.format("d1: $%,.2f.", d1));
     }
 }

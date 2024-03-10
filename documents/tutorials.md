@@ -118,161 +118,11 @@ StringFormattingTest.java
 - formatDateTime
 - formattingFloatingPoint
 
-## Operators
+[Java Explained: Operators](#operatorsTutorials.md)
 
-### Number of operands
-* unary
-  * -- postfix, prefix
-  * ++ postfix, prefix
-  * +, -
-  * !
-  * ~
-  * (type)
-* binary
-  * +, -
-  * *, /, %
-  * <<, >>, >>>
-  * <, <=, >, >=
-  * ==, !=
-  * &
-  * ^
-  * |
-  * &&
-  * ||
-  * ?:
-  * =, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>=, >>>=
-* ternary
-  * ?:
+[Java Explained: Flow of Control](#flowOfControlTutorials.md)
 
-### Precedence and associativity
-PrecedenceTest.java
-- parentheses
-- shiftOperators
-- postFixIncrement
-- multiplicationOverAddition
-- divisionOverAddition
-- prefixIncrement
-- unaryOperatorsPrecedence
-
-* unary operators higher than binary
-* parentheses highest precedence
-* next postfix increment and decrement are highest precedence
-* unary operators with the exception of prefix and postfix promote to int
-* on equal precedence, left to right associativity, except assignment
-
-### Arithmetic Operators
-ArithmeticOperatorsTest.java
-- subtraction
-- addition
-- prefixIncrement
-- modulusByZero
-- postfixIncrement
-- division
-- modulusByZeroDouble
-- unaryMinus
-- multiplication
-10. [ ] unaryPlus
-- prefixDecrement
-- modulus
-- divideByZero
-- postfixDecrement
-- divideByZeroDouble
-
-### Comparison Operators
-ComparisonOperatorsTest.java
-- lessThanEquals
-- equals
-- notEquals
-- greaterThan
-- greaterThanEquals
-- lessThan
-
-### Conditional Operators
-ConditionalOperatorsTest.java
-- conditionalAnd
-- conditionalNot
-- conditionalOrShortCircuit
-- conditionalAndShortCircuit
-- conditionalOr
-
-### Logical Operators
-LogicalOperatorsTest.java
-- rightShift
-- bitWiseNegate
-- bitWiseOr
-- bitWiseAnd
-- bitWiseXor
-- unsignedRightShift
-- leftShift
-
-## Flow of Control
-
-### if else
-IfElseTest.java
-- simpleIfElse
-- ifElse
-- ifElseIfElse
-- nestedIfElse
-- ifStatement
-### switch
-SwitchTest.java
-- lambdaSwitch
-- enumSwitch
-- switchWithFallThrough
-- integerSwitch
-- switchWithExpressionsInCases
-- switchWithExpressionInSwitchExpression
-- intSwitch
-- stringSwitch
-
-### while loop
-WhileLoopTest.java
-- basicWhileLoop
-- whileLoopWithBreak
-- whileLoopWithContinue
-- whileLoopWithReturn
-- whileLoopWithReturn
-- nestedWhileLoops
-
-### do while loop
-DoWhileLoopTest.java
-- basicDoWhileLoop
-- nestedDoWhileLoop
-
-### for loop
-ForLoopTest.java
-- basicForLoop
-- forLoopWithBreak
-- forLoopWithContinue
-- forLoopWithReturn
-- forLoopWithMultipleVariables
-
-### for each loop
-ForEachLoopTest.java
-- basicForEachLoop
-- forEachLoopWithBreak
-- forEachLoopWithContinue
-- forEachLoopWithLabel
-
-### Labels
-BreakToLabelTest.java
-- breakToLabel
-
-
-# Streams
-## Creating Streams
-
-- createStreamBuilder
-- createStreamGenerate
-- createStreamOfNullable
-- createStreamFromArray
-- createStreamFromArrayList
-- createStreamIterate
-- createStreamConcat
-- createStreamOfElements
-- createEmptyStream
-
-[Java Explained: Concurrency in Java](#concurrency-in-java)
+[Java Explained: Concurrency in Java](#concurrecyTutorials.md)
 
 ### Parallelism vs. Concurrency
 
@@ -290,7 +140,7 @@ techniques like hyper-threading.
 
 In many cases, the terms are used interchangeably or in a way that implies they are the same thing. However, there are subtle differences in their meanings, especially in contexts where concurrency may not necessarily involve true simultaneous execution of tasks (e.g., cooperative multitasking or asynchronous I/O).
 
-[Java Explained: Collections in Java](#collections-in-java)
+[Java Explained: Collections in Java](#collectionTutorials.md)
 
 
 
