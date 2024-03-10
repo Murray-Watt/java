@@ -292,17 +292,7 @@ In many cases, the terms are used interchangeably or in a way that implies they 
 
 [Java Explained: Collections in Java](#collections-in-java)
 
-### Deadlocks and Race Condition 
 
-Common issues in concurrent programming. Deadlocks occur when two or more threads are 
-waiting for each other to release resources, while race conditions occur when the outcome 
-of a program depends on the timing or interleaving of threads.
-
-### Thread Safety
-
-Ensuring that data shared between threads is accessed in a way that avoids conflicts 
-and maintains data integrity. This often involves using synchronization mechanisms 
-like locks or atomic operations.
 
 
 

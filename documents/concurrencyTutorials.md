@@ -444,6 +444,43 @@ and maintains data integrity. This often involves using synchronization mechanis
 like locks or atomic operations.
 [AtomicOperationsTest.java](../src/test/java/org/mwatt/tutorial/concurrency/AtomicOperationsTest.java)
 
+## Deque
+
+`Deque` in Java stands for "Double Ended Queue." It is a linear data structure that supports adding and removing elements from both ends. In Java, the `Deque` interface extends the `Queue` interface and adds methods to support operations at both ends of the queue.
+
+### Operations on Deque
+
+#### Insert Operations
+
+- **Throws Exception**: If the deque is full and cannot add more elements, the following methods will throw an exception:
+  - `addFirst(e)`: Adds the specified element to the front of the deque.
+  - `addLast(e)`: Adds the specified element to the end of the deque.
+
+- **Special Value**: If the deque is full and cannot add more elements, the following methods will return a special value (`null` or `false`):
+  - `offerFirst(e)`: Adds the specified element to the front of the deque if it is possible to do so immediately without violating capacity restrictions.
+  - `offerLast(e)`: Adds the specified element to the end of the deque if it is possible to do so immediately without violating capacity restrictions.
+
+#### Remove Operations
+
+- **Throws Exception**: If the deque is empty and no elements are available to remove, the following methods will throw an exception:
+  - `removeFirst()`: Removes and returns the first element from the deque.
+  - `removeLast()`: Removes and returns the last element from the deque.
+
+- **Special Value**: If the deque is empty and no elements are available to remove, the following methods will return a special value (`null` or `false`):
+  - `pollFirst()`: Removes and returns the first element from the deque, or returns `null` if the deque is empty.
+  - `pollLast()`: Removes and returns the last element from the deque, or returns `null` if the deque is empty.
+
+#### Examine Operations
+
+- **Throws Exception**: If the deque is empty and no elements are available to examine, the following methods will throw an exception:
+  - `getFirst()`: Returns the first element in the deque without removing it.
+
+- **Special Value**: If the deque is empty and no elements are available to examine, the following methods will return a special value (`null`):
+  - `peekFirst()`: Retrieves, but does not remove, the first element of the deque, or returns `null` if the deque is empty.
+  - `peekLast()`: Retrieves, but does not remove, the last element of the deque, or returns `null` if the deque is empty.
+
+### Usage
+`Deque` is useful in scenarios where elements need to be added or removed from both ends of a collection. It provides more functionality than a regular queue or stack, making it a versatile data structure in Java.
 
 
 
