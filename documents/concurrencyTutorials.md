@@ -442,6 +442,7 @@ These thread-safe collections provide various levels of concurrency support and 
 Ensuring that data shared between threads is accessed in a way that avoids conflicts
 and maintains data integrity. This often involves using synchronization mechanisms
 like locks or atomic operations.
+[AtomicOperationsTest.java](../src/test/java/org/mwatt/tutorial/concurrency/AtomicOperationsTest.java)
 
 
 
