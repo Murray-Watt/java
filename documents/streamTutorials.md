@@ -94,3 +94,17 @@ value types in Java. It includes examples of creating and manipulating
 IntStream, LongStream, and DoubleStream streams. The examples cover operations 
 like summing, averaging, and finding minimum and maximum values in streams 
 of primitive types.
+
+## Using Binary Operators with Streams
+
+BinaryOperator<T>: Represents an operation upon two operands of the same type, producing a result of 
+the same type as the operands.
+
+IntBinaryOperator: Represents an operation upon two int-valued operands and producing an int-valued 
+result.
+
+LongBinaryOperator: Represents an operation upon two long-valued operands and producing a long-valued 
+result.
+
+DoubleBinaryOperator: Represents an operation upon two double-valued operands and producing 
+a double-valued result.
