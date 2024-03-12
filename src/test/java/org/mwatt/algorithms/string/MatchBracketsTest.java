@@ -45,4 +45,14 @@ class MatchBracketsTest {
         assertFalse(matchBrackets.isValid("([)]"));
         assertTrue(matchBrackets.isValid("{[]}"));
     }
+
+    @Test
+    public void matchBracketsMappedWithDeque() {
+        MatchBrackets matchBrackets = new MatchBrackets();
+        assertTrue(matchBrackets.isValid2("()"));
+        assertTrue(matchBrackets.isValid2("()[]{}"));
+        assertFalse(matchBrackets.isValid2("(]"));
+        assertFalse(matchBrackets.isValid2("([)]"));
+        assertTrue(matchBrackets.isValid2("{[]}"));
+    }
 }

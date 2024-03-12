@@ -1,8 +1,6 @@
 package org.mwatt.algorithms.string;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class MatchBrackets {
 
@@ -55,7 +53,7 @@ public class MatchBrackets {
             }
 
             previous = (previousIndex == -1) ? '*' : str.charAt(previousIndex);
-            System.out.println(previousIndex + ":" + previous);
+            System.out.println(STR."\{previousIndex}:\{previous}");
         }
 
         return previousIndex == -1;
@@ -159,6 +157,30 @@ public class MatchBrackets {
 
             if (mappings.containsKey(c)) {
                 if (stack.empty()) {
+                    return false;
+                }
+
+                char m = stack.pop();
+
+                if (m != mappings.get(c)) {
+                    return false;
+                }
+            } else {
+                stack.push(c);
+            }
+        }
+
+        return stack.isEmpty();
+    }
+
+    public boolean isValid2(String s) {
+        Deque<Character> stack = new LinkedList<>();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if (mappings.containsKey(c)) {
+                if (stack.isEmpty()) {
                     return false;
                 }
 

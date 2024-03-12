@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BinaryOperatorsTest {
         @Test
         public void performSameTypeOperationWithBinaryOperator() {
-            BinaryOperator<Integer> add = (a, b) -> a + b;
+            BinaryOperator<Integer> add = Integer::sum;
             assertEquals(Integer.valueOf(5), add.apply(2, 3));
         }
 
