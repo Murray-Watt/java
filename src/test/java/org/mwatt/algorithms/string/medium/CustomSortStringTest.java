@@ -1,4 +1,4 @@
-package org.mwatt.algorithms.string;
+package org.mwatt.algorithms.string.medium;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
