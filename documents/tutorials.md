@@ -23,15 +23,15 @@
 * Imports
 * Binding
 
-[Java Explained: Strings](#stringTutorials.md)
+[Java Explained: Strings](stringTutorials.md)
 
-[Java Explained: Operators](#operatorsTutorials.md)
+[Java Explained: Operators](operatorTutorials.md)
 
-[Java Explained: Flow of Control](#flowOfControlTutorials.md)
+[Java Explained: Flow of Control](flowOfControlTutorials.md)
 
-[Java Explained: Concurrency in Java](#concurrecyTutorials.md)
+[Java Explained: Concurrency in Java](concurrencyTutorials.md)
 
-[Java Explained: Lambda Expressions](#lambdaTutorials.md)
+[Java Explained: Lambda Expressions](lambdaTutorials.md)
 
 ### Parallelism vs. Concurrency
 
@@ -49,9 +49,9 @@ techniques like hyper-threading.
 
 In many cases, the terms are used interchangeably or in a way that implies they are the same thing. However, there are subtle differences in their meanings, especially in contexts where concurrency may not necessarily involve true simultaneous execution of tasks (e.g., cooperative multitasking or asynchronous I/O).
 
-[Java Explained: Collections in Java](#collectionTutorials.md)
+[Java Explained: Collections in Java](collectionTutorials.md)
 
-[Java Explained: Streams](#streamsTutorials.md)
+[Java Explained: Streams](streamTutorials.md)
 
 
 

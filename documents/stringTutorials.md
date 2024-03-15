@@ -1,92 +1,25 @@
 # Java Explained: Strings
 
 ## Comparisons
-StringComparisonsTest.java
-- equals
-- equalsIgnoreCase
-- contentEquals
-- compareTo
-- compareToIgnoreCase
-- isEmpty
-- isBlank
-- 
+[StringCompareTest.java](../src/test/java/org/mwatt/tutorial/strings/StringCompareTest.java)
+
 ## Searching
-StringSearchingTest.java
-- contains
-- endsWith
-- indexOf
-- lastIndexOf
-- matches
-- regionMatches
-- startsWith
+[StringSearchTest.java](../src/test/java/org/mwatt/tutorial/strings/StringSearchTest.java)
 
 ## Manipulation
-StringManipulationTest.java
-- concat
-- join (introduced in Java 8)
-- replace
-- replaceAll
-- replaceFirst
-- split
-- substring
-- subSequence
+[StringManipulationTest.java](../src/test/java/org/mwatt/tutorial/strings/StringManipulationTest.java)
 
 ## Transformation
-StringTransformationTest.java
-- chars (introduced in Java 9)
-- codePoints (introduced in Java 9)
-- format
-- lines (introduced in Java 11)
-- repeat (introduced in Java 11)
-- strip
-- stripLeading
-- stripTrailing
-- toCharArray
-- toLowerCase
-- toUpperCase
-- trim
-- valueOf
+[StringTransformationTest.java](../src/test/java/org/mwatt/tutorial/strings/StringTransformationTest.java)
 
 # StringBuilder
-StringBuilderTest.java
-- constructions
-- basics examples
-- append examples
-- compare examples
-- insert examples
-- delete examples
-- replace examples
-- index examples
-- lastIndexOf examples
-10. [ ]   reverseExamples
--  setCharAtExamples
--  setLengthExamples
--  subStringExamples
--  toString Examples
--  trimToSize Examples
--  replace entire contents of a StringBuilder
+[StringBuilderTest.java](../src/test/java/org/mwatt/tutorial/strings/StringBuilderTest.java)
 
 # StringBuffer
-StringBufferTest.java
-basics examples
+[StringBufferTest.java](../src/test/java/org/mwatt/tutorial/strings/StringBufferTest.java)
 
 ## Text Blocks
-TextBlocksTest.java
-- basics examples
-- //stripIndent examples
-- translateEscapes examples
-- //formatted examples
+[TextBlockTest.java](../src/test/java/org/mwatt/tutorial/strings/TextBlockTest.java)
 
 ## Formatting
-SimpleDateFormatTest.java
-formattingDates
-
-StringFormattingTest.java
-- formattingDates
-- formattingIntegers
-- formatTime
-- formatDateTimeWithTimeZone
-- formatToUpperCase
-- formattingString
-- formatDateTime
-- formattingFloatingPoint
+[SimpleDateFormatTest.java](../src/test/java/org/mwatt/tutorial/formatting/SimpleDateFormatTest.java)

@@ -23,19 +23,19 @@ Returns their indices in an array
 
 Assumes that there will always be exactly one solution
 
-[FindAddends.java](../src/main/java/org/mwatt/algorithms/search/easy/FindAddends.java)
-[FindAddendsTest.java](../src/test/java/org/mwatt/algorithms/search/easy/FindAddendsTest.java)
+[FindTwoSum.java](../src/main/java/org/mwatt/algorithms/search/easy/FindTwoSum.java)
+[FindTwoSum.java](../src/test/java/org/mwatt/algorithms/search/easy/FindTwoSumTest.java)
 
 ## String 
 ### Easy
 
-[MatchBrackets.java](../src/main/java/org/mwatt/algorithms/string/MatchBrackets.java)
-[MatchBracketsTest.java](../src/test/java/org/mwatt/algorithms/string/MatchBracketsTest.java)
+[MatchBrackets.java](../src/main/java/org/mwatt/algorithms/strings/MatchBrackets.java)
+[MatchBracketsTest.java](../src/test/java/org/mwatt/algorithms/strings/MatchBracketsTest.java)
 
 A string can be abbreviated by replacing any number of non-adjacent, non-empty substrings with their lengths. 
 The lengths should not have leading zeros.
 
-[AbbreviateString.java](../src/main/java/org/mwatt/algorithms/string/easy/Abbreviation.java)
+[AbbreviateString.java](../src/main/java/org/mwatt/algorithms/strings/easy/Abbreviation.java)
 
 ### Medium
 Given two strings, order and str, with unique characters in order and str, sort the characters of str so 
@@ -45,8 +45,8 @@ then x should appear before y in the permuted string. Return any permutation of 
 order and str are strings with only lowercase letters.
 order has distinct characters and is no longer than 26.
 
-[CustomSortString.java](../src/main/java/org/mwatt/algorithms/string/medium/CustomSortString.java)
-[CustomSortStringTest.java](../src/test/java/org/mwatt/algorithms/string/medium/CustomSortStringTest.java)
+[CustomSortString.java](../src/main/java/org/mwatt/algorithms/strings/medium/CustomSortString.java)
+[CustomSortStringTest.java](../src/test/java/org/mwatt/algorithms/strings/medium/CustomSortStringTest.java)
 
 ## Trees
 

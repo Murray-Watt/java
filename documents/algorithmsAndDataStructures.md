@@ -2,12 +2,15 @@
 
 ## Introduction
 
+## [Two Pointers On Opposite Ends of a List/Array](twoPointerOnOppositeEnds.md)
+
+
+## Permutations
+
+
 ## Dynamic Programming
 [Fibonacci.java](../src/main/java/org/mwatt/algorithms/dynamic/easy/Fibonacci.java)
 [FibonacciTest.java](../src/test/java/org/mwatt/algorithms/dynamic/easy/FibonacciTest.java)
-- fibonacciRecursive
-- fibonacciDynamicProgramming
-- fibDynamicProgrammingSpaceOptimized
 
 
 ## Tree Traversals

@@ -1,4 +1,4 @@
-package org.mwatt.algorithms.string;
+package org.mwatt.algorithms.strings;
 
 import org.junit.jupiter.api.Test;
 

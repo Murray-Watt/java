@@ -1,4 +1,4 @@
-package org.mwatt.algorithms.string.medium;
+package org.mwatt.algorithms.strings.medium;
 
 import java.util.ArrayList;
 import java.util.Comparator;

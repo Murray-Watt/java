@@ -1,4 +1,4 @@
-package org.mwatt.algorithms.string.easy;
+package org.mwatt.algorithms.strings.easy;
 
 public class Abbreviation {
     public boolean validWordAbbreviation1(String word, String abbr) {
