@@ -9,7 +9,7 @@ class ArrayUtilsTest {
     void limitDistinctIntsWhenMaxCountIsOne() {
         int[] input = {1, 1, 2, 2, 2, 3, 4, 4, 5};
         int[] expected = {1, 2, 3, 4, 5};
-        int[] result = ArrayUtils.limitDistinctInts(input, 1);
+        int[] result = ArrayUtils.nDistinctInts(input, 1);
         assertArrayEquals(expected, result);
     }
 
@@ -17,7 +17,7 @@ class ArrayUtilsTest {
     void limitDistinctIntsWhenMaxCountIsTwo() {
         int[] input = {1, 1, 2, 2, 2, 3, 4, 4, 5};
         int[] expected = {1, 1, 2, 2, 3, 4, 4, 5};
-        int[] result = ArrayUtils.limitDistinctInts(input, 2);
+        int[] result = ArrayUtils.nDistinctInts(input, 2);
         assertArrayEquals(expected, result);
     }
 
@@ -25,7 +25,7 @@ class ArrayUtilsTest {
     void limitDistinctIntsWhenMaxCountIsThree() {
         int[] input = {1, 1, 2, 2, 2, 3, 4, 4, 5};
         int[] expected = {1, 1, 2, 2, 2, 3, 4, 4, 5};
-        int[] result = ArrayUtils.limitDistinctInts(input, 3);
+        int[] result = ArrayUtils.nDistinctInts(input, 3);
         assertArrayEquals(expected, result);
     }
 
@@ -33,7 +33,7 @@ class ArrayUtilsTest {
     void limitDistinctIntsWhenMaxCountIsGreaterThanOccurrences() {
         int[] input = {1, 1, 2, 2, 2, 3, 4, 4, 5};
         int[] expected = {1, 1, 2, 2, 2, 3, 4, 4, 5};
-        int[] result = ArrayUtils.limitDistinctInts(input, 5);
+        int[] result = ArrayUtils.nDistinctInts(input, 5);
         assertArrayEquals(expected, result);
     }
 
@@ -41,7 +41,7 @@ class ArrayUtilsTest {
     void limitDistinctIntsWhenMaxCountIsZero() {
         int[] input = {1, 1, 2, 2, 2, 3, 4, 4, 5};
         int[] expected = {};
-        int[] result = ArrayUtils.limitDistinctInts(input, 0);
+        int[] result = ArrayUtils.nDistinctInts(input, 0);
         assertArrayEquals(expected, result);
     }
 
@@ -49,7 +49,7 @@ class ArrayUtilsTest {
     void limitDistinctIntsWhenArrayIsEmpty() {
         int[] input = {};
         int[] expected = {};
-        int[] result = ArrayUtils.limitDistinctInts(input, 2);
+        int[] result = ArrayUtils.nDistinctInts(input, 2);
         assertArrayEquals(expected, result);
     }
 
@@ -57,7 +57,7 @@ class ArrayUtilsTest {
     void limitDistinctIntsWhenArrayIsNull() {
         int[] input = null;
         int[] expected = {};
-        int[] result = ArrayUtils.limitDistinctInts(input, 2);
+        int[] result = ArrayUtils.nDistinctInts(input, 2);
         assertArrayEquals(expected, result);
     }
 }

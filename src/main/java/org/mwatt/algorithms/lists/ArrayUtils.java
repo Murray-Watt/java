@@ -3,7 +3,7 @@ package org.mwatt.algorithms.lists;
 import java.util.Arrays;
 
 public class ArrayUtils {
-    public static int[] limitDistinctInts(int[] nums, int maxCount) {
+    public static int[] nDistinctInts(int[] nums, int maxCount) {
         if (nums == null || nums.length == 0 || maxCount <= 0) {
             return new int[0];
         }
