@@ -1,4 +1,4 @@
-package org.mwatt.algorithms.search.easy;
+package org.mwatt.algorithms.dynamic.easy;
 
 public class FindThreeSum {
     // Finds two numbers in the given array nums that add up to the target

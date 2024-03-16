@@ -1,6 +1,7 @@
-package org.mwatt.algorithms.search.easy;
+package org.mwatt.algorithms.dynamic.easy;
 
 import org.junit.Test;
+import org.mwatt.algorithms.dynamic.easy.FindThreeSum;
 
 import static org.junit.jupiter.api.Assertions.*;
 
