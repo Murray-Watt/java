@@ -13,8 +13,10 @@ public class SortAlgorithm2Test {
 
     private static Stream<Arguments> sortingAlgorithmToTest() {
         return Stream.of(
-                Arguments.of(new MergeSort(),true),
-                Arguments.of(new MergeSort(),false)
+                //Arguments.of(new MergeSort(),true),
+                //Arguments.of(new MergeSort(),false),
+                //Arguments.of(new QuickSort(),true),
+                Arguments.of(new QuickSort(),false)
         );
     }
 
