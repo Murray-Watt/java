@@ -63,9 +63,9 @@ It has a time complexity of O(n log n).
 
 [SortAlgorithmTest.java](../src/test/java/org/mwatt/algorithms/sort/SortAlgorithmTest.java)
 
-[MergeSort.java](../src/main/java/org/mwatt/algorithms/lists/MergeSort.java)
+[MergeSort.java](../src/main/java/org/mwatt/algorithms/sort/MergeSort.java)
 
-[MergeSortTest.java](../src/test/java/org/mwatt/algorithms/lists/MergeSortTest.java)
+[MergeSortTest.java](../src/test/java/org/mwatt/algorithms/sort/SortAlgorithmTest.java)
 
 Other optimizations and variations of Merge Sort include:
 * Use Insertion Sort for small subarrays: Merge Sort's efficiency suffers when dealing with small arrays due to the overhead of recursive function calls. Switching to Insertion Sort for small subarrays can improve the running time, as it performs better on small input sizes.

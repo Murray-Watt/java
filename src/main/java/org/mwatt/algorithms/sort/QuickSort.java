@@ -1,8 +1,6 @@
 package org.mwatt.algorithms.sort;
 
-import org.mwatt.algorithms.trees.TreeNode;
 import org.mwatt.core.Range;
-
 import java.util.Deque;
 import java.util.LinkedList;
 
