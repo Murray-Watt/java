@@ -19,13 +19,13 @@ This time complexity includes optimizations such as using hash maps or sorting t
 
 1-Sum problem: O(n) - This is the simplest form of the N-Sum problem, where we are looking for a single element in the array that matches the target sum, and can be solved with a binary search.
 
-## Two Sum
+## 2-Sum
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-[FindTwoSum.java](../src/main/java/org/mwatt/algorithms/dynamic/easy/FindTwoSum.java)
+[TwoSumFinder.java](../src/main/java/org/mwatt/algorithms/dynamic/easy/TwoSumFinder.java)
 
-[FindTwoSumTest.java](../src/test/java/org/mwatt/algorithms/dynamic/easy/FindTwoSumTest.java)
+[TwoSumFinderTest.java](../src/test/java/org/mwatt/algorithms/dynamic/easy/TwoSumFinderTest.java)
 
-## Three Sum (three pointers extension of Two Sum
+## 3-Sum 
 Given an array of integers, find all unique triplets in the array which gives the sum of zero.
 
 Sort the input array nums.
@@ -37,9 +37,10 @@ If the sum is greater than the target, decrement the high pointer to consider sm
 Repeat steps 3-6 for each element in the array.
 If no triplet is found, return an array of zeros ([0, 0, 0]) to indicate that there is no solution.
 
-[FindThreeSum.java](../src/main/java/org/mwatt/algorithms/dynamic/easy/FindThreeSum.java)
+[ThreeSumFinder.java](../src/main/java/org/mwatt/algorithms/dynamic/easy/ThreeSumFinder.java)
 
-[FindThreeSumTest.java](../src/test/java/org/mwatt/algorithms/dynamic/easy/FindThreeSumTest.java)
+[ThreeSumFinderTest.java](../src/test/java/org/mwatt/algorithms/dynamic/easy/ThreeSumFinderTest.java)
+
 
 ### Naive Approach (O(n^3))
 The most straightforward way to solve the 3-Sum problem is by using three nested loops to check all possible triplets in the input array. However, this approach has a time complexity of O(n^3), which is inefficient for large arrays.
@@ -58,7 +59,7 @@ This method improves upon the naive approach by using a sorted array and a two-p
 
 This method has a time complexity of O(n^2 * log(n)) due to the sorting step and the binary search-like technique with the two pointers.
 
-# Optimized Approach using Two Pointers with Sorted Array and Hash Map
+### Optimized Approach using Two Pointers with Sorted Array and Hash Map
 This approach optimizes finding all triplets in a sorted array that sum up to zero using a hash map. The code consists of two methods: `twoSum` and `findAllThreeSumsHashMap`.
 
 ## `twoSum` method:
@@ -104,6 +105,24 @@ While this approach is intuitive and doesn't require sorting the input array, it
 
 In conclusion, this alternative solution demonstrates a different perspective on solving the problem but comes with its own trade-offs in terms of readability, performance, and maintainability.
 
+## 4-Sum
+(FourSumFinder.java)[../src/main/java/org/mwatt/algorithms/dynamic/easy/FourSumFinder.java]
+
+(FourSumFinderTest.java)[../src/test/java/org/mwatt/algorithms/dynamic/easy/FourSumFinderTest.java]
+
+For 4-Wum we wrap the twoSum method to create a fourSum method:
+1. Sort the input array nums.
+2. Create an empty list solutions to store the resulting quadruplets.
+3. Iterate through the array nums using two nested loops. For each pair of elements nums[i] and nums[j], call the twoSum method to find two other elements that, when combined with nums[i] and nums[j], sum up to zero.
+4. The twoSum method will handle finding the other two elements, avoiding duplicate quadruplets.
+5. Append the resulting quadruplets to the solutions list.
+6. Finally, return the list of quadruplets found.
+
+Keep in mind that, similar to the 3-Sum problem, this solution has a time complexity of O(n^3) due to the three nested loops and a space complexity of O(n) for the hash map used in the twoSum method.
+
+It's important to consider the efficiency trade-offs when dealing with larger input sizes, but this approach provides a straightforward way to find quadruplets that sum up to zero in a sorted array.
+
+
 
 ## Container With Most Water
 Given n non-negative integers representing the height of each bar in a bar chart, compute the maximum amount of water that can be trapped between the bars.
@@ -127,10 +146,9 @@ Reverse a singly linked list.
 
 Check if a linked list is a palindrome.
 ## BinarySearch
-* [BinarySearch.java](../src/main/java/org/mwatt/algorithms/lists/BinarySearch.java)
-* 
-* [BinarySearchTest.java](../src/test/java/org/mwatt/algorithms/lists/BinarySearchTest.java)
+[BinarySearch.java](../src/main/java/org/mwatt/algorithms/lists/BinarySearch.java)
 
+[BinarySearchTest.java](../src/test/java/org/mwatt/algorithms/lists/BinarySearchTest.java)
 
 Given a sorted array and a target/key value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 

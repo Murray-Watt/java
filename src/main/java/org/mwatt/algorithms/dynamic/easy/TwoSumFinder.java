@@ -3,11 +3,11 @@ package org.mwatt.algorithms.dynamic.easy;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindTwoSum {
+public class TwoSumFinder {
     // Finds two numbers in the given array nums that add up to the target
     // Returns their indices in an array
     // Assumes that there will always be exactly one solution
-    public static int[] findTwoSum_n2(int[] nums, int target) {
+    public static int[] findTwoSumN2(int[] nums, int target) {
         // Iterate over each element in the array
         for (int i = 0; i < nums.length; i++) {
             // Check all elements after the current element
@@ -24,7 +24,7 @@ public class FindTwoSum {
         return new int[]{};
     }
 
-    public static int[] findTwoSum_N(int[] nums, int target) {
+    public static int[] findTwoSumN(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int remainder = target - nums[i];

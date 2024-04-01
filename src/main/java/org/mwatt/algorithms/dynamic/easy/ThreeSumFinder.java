@@ -2,7 +2,7 @@ package org.mwatt.algorithms.dynamic.easy;
 
 import java.util.*;
 
-public class FindThreeSum {
+public class ThreeSumFinder {
     // Finds three numbers in the given array nums that add up to the target
     // Returns their indices in an array
     // Assumes that there will always be exactly one solution
