@@ -3,6 +3,22 @@ package org.mwatt.algorithms.strings.easy;
 import java.util.Deque;
 import java.util.LinkedList;
 
+/*
+    Converting a character to a string using String.valueOf.
+
+    String characterAsString = String.valueOf(c);
+
+    Deque Methods:
+        getLast() - Retrieves the last element from the Deque without removing it.
+        removeLast() - Retrieves and removes the last element from the Deque.
+
+    The updated code snippet using these methods would look like this:
+
+    if (!queue.isEmpty() && queue.getLast() == c) {
+        val removed = queue.removeLast();
+    }
+
+ */
 public class RemoveKDuplicates {
     static class Freq {
         public char letter;
