@@ -2,16 +2,22 @@
 
 
 ## Easy Attempt
-### Remove All Adjacent Duplicates in String II
+### Remove All Adjacent Duplicates in String II (Done)
 
 Given a string, remove all adjacent duplicates of a character, as well as the duplicates of the duplicated characters, recursively until no more duplicates are found.
 
+### Logger Rate Limiter (Done)
+Design a logger system that limits the number of messages that can be logged within a given time window.
+
+### RemoveKDuplicates (Done)
+Blah Blah
+
 ## Medium Attempt
 
-### Break a Palindrome
+### Break a Palindrome (Done)
 Given a palindromic string, find the minimum number of characters to change to make it non-palindromic.
 
-### Remove Duplicate Letters
+### Remove Duplicate Letters (Done)
 
 Given a string, remove all duplicate letters so that each letter appears only once. The order of the remaining letters doesn't matter.
 
@@ -32,19 +38,15 @@ Given an array of song durations, find the number of pairs of songs whose total 
 
 ### LFU Cache
 Implement an LFU (Least Frequently Used) cache that supports operations like get, put, and delete.
+[lists](..%2Fsrc%2Fmain%2Fjava%2Forg%2Fmwatt%2Falgorithms%2Flists)
 
+### Design Authentication Manager (Done)
+Design a system to manage user authentication for multiple platforms, supporting common authentication flows like OAuth.
 
 ## Hard Attempt
 
-## Hard
-### Logger Rate Limiter
-Design a logger system that limits the number of messages that can be logged within a given time window.
-
-### Number of Islands
+### Number of Islands (Done)
 Given a 2D grid of non-negative integers, count the number of distinct "islands" or connected regions of non-zero values.
-
-### Design Authentication Manager
-Design a system to manage user authentication for multiple platforms, supporting common authentication flows like OAuth.
 
 ## Medium - Review Solutions Only
 ### Reorganize String
