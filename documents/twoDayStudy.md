@@ -6,15 +6,14 @@
 
 Given a string, remove all adjacent duplicates of a character, as well as the duplicates of the duplicated characters, recursively until no more duplicates are found.
 
-### Remove Duplicate Letters
-
-Given a string, remove all duplicate letters so that each letter appears only once. The order of the remaining letters doesn't matter.
-
-
 ## Medium Attempt
 
 ### Break a Palindrome
 Given a palindromic string, find the minimum number of characters to change to make it non-palindromic.
+
+### Remove Duplicate Letters
+
+Given a string, remove all duplicate letters so that each letter appears only once. The order of the remaining letters doesn't matter.
 
 ### Decode String
 Convert a string that may contain encoded characters, such as "%20" for a space, into its decoded form.
