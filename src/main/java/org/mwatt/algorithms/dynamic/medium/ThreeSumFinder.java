@@ -1,4 +1,4 @@
-package org.mwatt.algorithms.dynamic.easy;
+package org.mwatt.algorithms.dynamic.medium;
 
 import java.util.*;
 

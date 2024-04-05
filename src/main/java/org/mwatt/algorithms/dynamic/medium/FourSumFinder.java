@@ -1,6 +1,4 @@
-package org.mwatt.algorithms.dynamic.easy;
-
-import java.util.*;
+package org.mwatt.algorithms.dynamic.medium;
 
 import java.util.*;
 
@@ -34,10 +32,6 @@ public class FourSumFinder {
 
         for (int a = 0; a < nums.length - 3; a++) {
             for (int b = a + 1; b < nums.length - 2; b++) {
-                if (nums[a] == -4 && nums[b] == -1) {
-                    System.out.println("a: " + a + " b: " + b);
-                }
-
                 var twoSums = twoSum(nums, nums[a] + nums[b], b + 1);
 
                 for (var twoSum : twoSums) {

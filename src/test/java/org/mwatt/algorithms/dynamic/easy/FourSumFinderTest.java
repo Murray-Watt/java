@@ -1,6 +1,7 @@
 package org.mwatt.algorithms.dynamic.easy;
 
 import org.junit.jupiter.api.Test;
+import org.mwatt.algorithms.dynamic.medium.FourSumFinder;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -25,20 +26,20 @@ public class FourSumFinderTest {
     @Test
     public void fourSumOneSolution() {
         int[] nums = {0, 1, 2, -3};
-        List<List<Integer>> expected = Arrays.asList(Arrays.asList(-3, 0, 1, 2));
+        List<List<Integer>> expected = List.of(Arrays.asList(-3, 0, 1, 2));
         assertEquals(expected, FourSumFinder.fourSum(nums));
     }
 
     @Test
     public void fourSumFiveElementsOneSolution() {
         int[] nums = {-3, -2, -1, 1, 3};
-        List<List<Integer>> expected = Arrays.asList(Arrays.asList(-3, -1, 1, 3));
+        List<List<Integer>> expected = List.of(Arrays.asList(-3, -1, 1, 3));
         assertEquals(expected, FourSumFinder.fourSum(nums));
     }
 
     @Test
     public void fourSumHas_Neg3_0_0_3() {
-        int[] nums = {1, 0, -8, 0, -7, 2, -3, 3};;
+        int[] nums = {1, 0, -8, 0, -7, 2, -3, 3};
         List<List<Integer>> expected = Arrays.asList(
                 Arrays.asList(-3, 0, 1, 2),
                 Arrays.asList(-3, 0, 0, 3)
@@ -50,7 +51,7 @@ public class FourSumFinderTest {
     @Test
     public void fourSumEachAddentIsNotRepeated() {
         int[] nums = {-2, 0, 0, 1, 2};
-        List<List<Integer>> expected = Arrays.asList(
+        List<List<Integer>> expected = List.of(
                 Arrays.asList(-2, 0, 0, 2)
         );
 
@@ -61,7 +62,7 @@ public class FourSumFinderTest {
     @Test
     public void fourSumTestOneSolutionWithOneElementZero() {
         int[] nums= {-3, 0, 1, 2};
-        List<List<Integer>> expected2_test3 = Arrays.asList(
+        List<List<Integer>> expected2_test3 = List.of(
                 Arrays.asList(-3, 0, 1, 2)
         );
         assertEquals(expected2_test3, FourSumFinder.fourSum(nums));
@@ -70,7 +71,7 @@ public class FourSumFinderTest {
     @Test
     public void fourSumTestOneSolutionManyNums() {
         int[] nums2_test4 = {-1000, 0, 1, 2, -1000, -1000, -3, -1000};
-        List<List<Integer>> expected2_test4 = Arrays.asList(
+        List<List<Integer>> expected2_test4 = List.of(
                 Arrays.asList(-3, 0, 1, 2)
         );
         assertEquals(expected2_test4, FourSumFinder.fourSum(nums2_test4));

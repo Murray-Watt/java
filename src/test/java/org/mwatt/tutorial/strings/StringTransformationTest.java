@@ -57,8 +57,8 @@ public class StringTransformationTest {
     }
     @Test
     public void basicFormatExample() {
-        System.out.println("s.format(\"Hello, %s!\", \"World\"): " + String.format("Hello, %s!", "World"));
-        System.out.println("s.format(\"Hello, %s!\", \"World\"): " + String.format("Hello, %s!", "World"));
+        System.out.println(STR."s.format(\"Hello, %s!\", \"World\"): \{String.format("Hello, %s!", "World")}");
+        System.out.println(STR."s.format(\"Hello, %s!\", \"World\"): \{String.format("Hello, %s!", "World")}");
     }
 
     @Test
@@ -72,18 +72,18 @@ public class StringTransformationTest {
     @Test
     public void repeatExamples() {
         String string1 = "Hello, World!";
-        System.out.println("string1.repeat(3): " + string1.repeat(3));
+        System.out.println(STR."string1.repeat(3): \{string1.repeat(3)}");
         assertEquals("Hello, World!Hello, World!Hello, World!", string1.repeat(3));
     }
 
     @Test
     public void stripExamples() {
         String string1 = "\t\nHello, World!  ";
-        System.out.println("string1.strip(): " + string1.strip());
+        System.out.println(STR."string1.strip(): \{string1.strip()}");
         assertEquals("Hello, World!", string1.strip());
-        System.out.println("string1.stripLeading(): " + string1.stripLeading());
+        System.out.println(STR."string1.stripLeading(): \{string1.stripLeading()}");
         assertEquals("Hello, World!  ", string1.stripLeading());
-        System.out.println("string1.stripTrailing(): " + string1.stripTrailing());
+        System.out.println(STR."string1.stripTrailing(): \{string1.stripTrailing()}");
         assertEquals("\t\nHello, World!", string1.stripTrailing());
     }
 
@@ -104,27 +104,27 @@ public class StringTransformationTest {
     @Test
     public void toLowerCaseExamples() {
         String string1 = "Hello, World!";
-        System.out.println("string1.toLowerCase(): " + string1.toLowerCase());
+        System.out.println(STR."string1.toLowerCase(): \{string1.toLowerCase()}");
         assertEquals("hello, world!", string1.toLowerCase());
     }
 
     @Test
     public void toUpperCaseExamples() {
         String string1 = "Hello, World!";
-        System.out.println("string1.toUpperCase(): " + string1.toUpperCase());
+        System.out.println(STR."string1.toUpperCase(): \{string1.toUpperCase()}");
         assertEquals("HELLO, WORLD!", string1.toUpperCase());
     }
 
     @Test
     public void trimExamples() {
         String string1 = "\t\nHello, World!  ";
-        System.out.println("string1.trim(): " + string1.trim());
+        System.out.println(STR."string1.trim(): \{string1.trim()}");
         assertEquals("Hello, World!", string1.trim());
     }
 
     @Test
     public void valueOfExamples() {
-        System.out.println("String.valueOf(123): " + String.valueOf(123));
+        System.out.println(STR."String.valueOf(123): \{String.valueOf(123)}");
         assertEquals("123", String.valueOf(123));
     }
 }

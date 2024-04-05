@@ -17,7 +17,8 @@ Design patterns are categorized into three main types:
 Each type of design pattern serves a specific purpose and provides a general reusable solution to a commonly occurring problem within a given context in software design.
 
 ## Creational Design Patterns
-### Singleton
-[ThreadSafeSingleton.java]
+### [Singleton Pattern](patterns/singletonPattern.md)
+
+
 
 

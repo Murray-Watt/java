@@ -3,11 +3,11 @@ package org.mwatt.algorithms;
 import java.util.HashMap;
 import java.util.Map;
 
-class Logger {
+class RateLimitLogger {
 
     Map<String,Integer> lastLogged = new HashMap<>();
 
-    public Logger() {
+    public RateLimitLogger() {
 
     }
 

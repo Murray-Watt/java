@@ -1,10 +1,12 @@
 package org.mwatt.core;
 
+import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+@Getter
 public class Range implements Iterable<Integer> {
         private final int lowIndex;
         private final int highIndex;
@@ -14,18 +16,9 @@ public class Range implements Iterable<Integer> {
             this.highIndex = highIndex;
         }
 
-        public int getLowIndex() {
-            return lowIndex;
-        }
-
-        public int getHighIndex() {
-            return highIndex;
-        }
-
-        // Optional: Override toString() for a readable representation of the range
         @Override
         public String toString() {
-            return "(" + lowIndex + ", " + highIndex + ")";
+            return STR."(\{lowIndex}, \{highIndex})";
         }
 
         @Override

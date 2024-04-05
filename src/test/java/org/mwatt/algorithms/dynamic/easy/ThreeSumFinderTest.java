@@ -1,6 +1,7 @@
 package org.mwatt.algorithms.dynamic.easy;
 
 import org.junit.jupiter.api.Test;
+import org.mwatt.algorithms.dynamic.medium.ThreeSumFinder;
 
 import java.util.*;
 
@@ -57,15 +58,15 @@ public class ThreeSumFinderTest {
     // Sane worst case for as above but average case is slower
     public void findThreeSumNoSort() {
         int[] nums1 = {1, 0, -1, 0, -2, 2};
-        List<List<Integer>> expected1 = Arrays.asList(Arrays.asList(-2, 0, 2), Arrays.asList(-1, 0, 1));
-        assertEquals(expected1, ThreeSumFinder.findAllThreeSumsHiLow(nums1));
+        List<List<Integer>> expected1 = Arrays.asList(Arrays.asList(-1, 0, 1),Arrays.asList(-2, 0, 2));
+        assertEquals(expected1, ThreeSumFinder.findAllThreeSumsNoSort(nums1));
 
         int[] nums2 = {3, 0, -2, -1, 1, 2};
-        List<List<Integer>> expected2 = Arrays.asList(Arrays.asList(-2, -1, 3), Arrays.asList(-2, 0, 2), Arrays.asList(-1, 0, 1));
-        assertEquals(expected2, ThreeSumFinder.findAllThreeSumsHiLow(nums2));
+        List<List<Integer>> expected2 = Arrays.asList(Arrays.asList(-2, -1, 3), Arrays.asList(-1, 0, 1), Arrays.asList(-2, 0, 2));
+        assertEquals(expected2, ThreeSumFinder.findAllThreeSumsNoSort(nums2));
 
         int[] nums3 = {-1, 0, 1, 2, -1, -4};
         List<List<Integer>> expected3 = Arrays.asList(Arrays.asList(-1, -1, 2), Arrays.asList(-1, 0, 1));
-        assertEquals(expected3, ThreeSumFinder.findAllThreeSumsHiLow(nums3));
+        assertEquals(expected3, ThreeSumFinder.findAllThreeSumsNoSort(nums3));
     }
 }
