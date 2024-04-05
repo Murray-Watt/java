@@ -17,6 +17,7 @@ class SortablePairTest {
 
         assertTrue(pair1.compareTo(pair2) < 0);
         assertTrue(pair2.compareTo(pair1) > 0);
+        //noinspection SimplifiableAssertion
         assertTrue(pair1.compareTo(pair3) == 0);
     }
 
