@@ -1,8 +1,6 @@
 package org.mwatt.core;
 
 import lombok.Getter;
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -22,7 +20,7 @@ public class Range implements Iterable<Integer> {
         }
 
         @Override
-        public @NotNull Iterator<Integer> iterator() {
+        public Iterator<Integer> iterator() {
             return new RangeIterator();
         }
 
