@@ -5,6 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class QuickSort implements IntSorter2 {
+
     @Override
     public void sort(int[] arr, boolean isRecursive) {
         if (isRecursive) {
