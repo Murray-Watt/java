@@ -19,6 +19,7 @@ public class InsertionSort implements IntSorter {
                 j--;
             }
 
+            // If key is not already in the correct position
             if (j + 1 < i) {
                 arr[j + 1] = key;
             }
