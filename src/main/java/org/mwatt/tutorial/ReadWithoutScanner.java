@@ -1,4 +1,4 @@
-package tutorial;
+package org.mwatt.tutorial;
 
 import java.io.BufferedReader;
 import java.io.IOException;

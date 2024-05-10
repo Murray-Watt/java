@@ -1,4 +1,4 @@
-package tutorial;
+package org.mwatt.tutorial;
 
 import java.util.Scanner;
 
